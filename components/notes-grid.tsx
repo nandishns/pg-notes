@@ -16,13 +16,24 @@ interface NotesGridProps {
   onPreviewChange: (isPreview: boolean) => void
   isPreviewMode: boolean
   semesters: { id: number; name: string }[]
+  selectedSemester: string
+  onSemesterChange: (semester: string) => void
+  searchQuery: string
+  onSearchChange: (query: string) => void
 }
 
-export function NotesGrid({ notes, onPreviewChange, isPreviewMode, semesters }: NotesGridProps) {
+export function NotesGrid({ 
+  notes, 
+  onPreviewChange, 
+  isPreviewMode, 
+  semesters,
+  selectedSemester,
+  onSemesterChange,
+  searchQuery,
+  onSearchChange
+}: NotesGridProps) {
   const [selectedNote, setSelectedNote] = useState<Note | null>(null)
   const { toast } = useToast()
-  const [searchQuery, setSearchQuery] = useState("")
-  const [selectedSemester, setSelectedSemester] = useState("0")
 
   const getFileId = (url: string) => {
     const match = url.match(/\/d\/(.+?)\//)
@@ -79,10 +90,10 @@ export function NotesGrid({ notes, onPreviewChange, isPreviewMode, semesters }: 
             placeholder="Search notes..."
             className="pl-8"
             value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
+            onChange={(e) => onSearchChange(e.target.value)}
           />
         </div>
-        <Select value={selectedSemester} onValueChange={setSelectedSemester}>
+        <Select value={selectedSemester} onValueChange={onSemesterChange}>
           <SelectTrigger className="w-full md:w-[200px]">
             <SelectValue placeholder="Select semester" />
           </SelectTrigger>

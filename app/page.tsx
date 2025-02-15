@@ -5,7 +5,7 @@ import { NotesGrid } from "@/components/notes-grid"
 import { semesters } from "@/lib/data"
 
 export default function Home() {
-  const [selectedSemester, setSelectedSemester] = useState<string>("")
+  const [selectedSemester, setSelectedSemester] = useState("1")
   const [searchQuery, setSearchQuery] = useState("")
   const [isPreviewMode, setIsPreviewMode] = useState(false)
 
@@ -18,7 +18,7 @@ export default function Home() {
     )
     .filter(
       (note) =>
-        (selectedSemester ? note.semester.toString() === selectedSemester : true) &&
+        (selectedSemester === "0" ? true : note.semester.toString() === selectedSemester) &&
         (searchQuery ? note.title.toLowerCase().includes(searchQuery.toLowerCase()) : true),
     )
 
@@ -28,6 +28,10 @@ export default function Home() {
       onPreviewChange={setIsPreviewMode}
       isPreviewMode={isPreviewMode}
       semesters={semesters}
+      selectedSemester={selectedSemester}
+      onSemesterChange={setSelectedSemester}
+      searchQuery={searchQuery}
+      onSearchChange={setSearchQuery}
     />
   )
 }
