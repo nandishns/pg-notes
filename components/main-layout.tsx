@@ -24,7 +24,7 @@ export function MainLayout({ children }: { children: React.ReactNode }) {
                 <p className="text-sm text-gray-300">Principal (MCom, MA, MPhil, MEd)</p>
               </div>
               <div className="px-4 py-4 sm:py-0">
-                <p className="font-medium">Mr. Sharanappa G.D</p>
+                <p className="font-medium">Mr. Sharanappa G.Dongargaon</p>
                 <p className="text-sm text-gray-300">Head of Department (MSc, B.Ed)</p>
               </div>
               <div className="px-4 py-4 sm:py-0">
@@ -38,7 +38,7 @@ export function MainLayout({ children }: { children: React.ReactNode }) {
             </div>
           </div>
           <div className="mt-8 pt-4 border-t border-gray-800 text-center">
-            <p className="text-sm text-gray-400">&copy; {new Date().getFullYear()} Department of Mathematics, CVPG Bhalki</p>
+            <p className="text-sm text-gray-400">&copy; {new Date().getFullYear()} Department of Mathematics, CBPG Bhalki</p>
           </div>
         </div>
       </footer>
