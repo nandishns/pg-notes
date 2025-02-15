@@ -3,14 +3,14 @@
 import { useState } from "react"
 import { ArrowLeft, Clock, Maximize2, Minimize2 } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import type { Note } from "@/lib/data"
+import type { Lesson } from "@/lib/data"
 
 interface PreviewPageProps {
-  note: Note
+  lesson: Lesson
   onBack: () => void
 }
 
-export function PreviewPage({ note, onBack }: PreviewPageProps) {
+export function PreviewPage({ lesson, onBack }: PreviewPageProps) {
   const [isFullScreen, setIsFullScreen] = useState(false)
 
   const getFileId = (url: string) => {
@@ -33,7 +33,7 @@ export function PreviewPage({ note, onBack }: PreviewPageProps) {
     }
   }
 
-  if (!note.folderUrl) {
+  if (!lesson.folderUrl) {
     return (
       <div className="flex flex-col w-full h-screen">
         <div className="flex items-center gap-2 p-4 border-b">
@@ -45,7 +45,7 @@ export function PreviewPage({ note, onBack }: PreviewPageProps) {
             <ArrowLeft className="h-4 w-4 mr-2" />
             Back
           </Button>
-          <h3 className="text-sm font-medium flex-1">{note.title}</h3>
+          <h3 className="text-sm font-medium flex-1">{lesson.title}</h3>
         </div>
         <div className="flex-1 flex items-center justify-center">
           <div className="text-center space-y-4">
@@ -71,7 +71,7 @@ export function PreviewPage({ note, onBack }: PreviewPageProps) {
           <ArrowLeft className="h-4 w-4 mr-2" />
           Back
         </Button>
-        <h3 className="text-sm font-medium flex-1">{note.title}</h3>
+        <h3 className="text-sm font-medium flex-1">{lesson.title}</h3>
         <Button
           variant="ghost"
           onClick={toggleFullScreen}
@@ -86,11 +86,11 @@ export function PreviewPage({ note, onBack }: PreviewPageProps) {
       </div>
       <div className="flex-1">
         <iframe
-          src={getViewUrl(note.folderUrl)}
+          src={getViewUrl(lesson.folderUrl)}
           className="w-full h-full border-0"
           allow="autoplay"
-          title={`Preview of ${note.title}`}
-          aria-label={`Document preview for ${note.title}`}
+          title={`Preview of ${lesson.title}`}
+          aria-label={`Document preview for ${lesson.title}`}
         ></iframe>
       </div>
     </div>
