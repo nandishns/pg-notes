@@ -74,14 +74,20 @@ export default function Home() {
         <div className="container px-4 py-8">
           <div className="max-w-2xl">
             <h2 className="text-xl font-bold mb-4">Department of Mathematics</h2>
-            <div className="space-y-2">
-              <p className="text-gray-400">Sri Channabasaveshwar PG Studies and Research Center</p>
-              <p className="text-gray-400">Bhalki-585328, Dist. Bidar</p>
-              
+            <div className="space-y-4">
+              <div>
+                
+                <p className="text-gray-300 mt-1">Shri Sharanappa G. Dongargaon - Head of Department</p>
+
+              </div>
+              <div className="pt-4 border-t border-gray-800">
+                <p className="text-gray-400">Sri Channabasaveshwar PG Studies and Research Center</p>
+                <p className="text-gray-400">Bhalki-585328, Dist. Bidar</p>
+              </div>
             </div>
           </div>
           <div className="mt-8 pt-4 border-t border-gray-800">
-            <p className="text-sm text-gray-400">&copy; {new Date().getFullYear()} Department of Mathematics, SCPG Studies and Research Center, Bhalki. All rights reserved.</p>
+            <p className="text-sm text-gray-400">&copy; {new Date().getFullYear()} Department of Mathematics, CVPG Bhalki</p>
           </div>
         </div>
       </footer>

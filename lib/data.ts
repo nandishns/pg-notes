@@ -55,5 +55,47 @@ export const semesters: Semester[] = [
       },
     ],
   },
+  {
+    id: 2,
+    name: "Semester 2",
+    notes: [
+      {
+        id: "s2_1",
+        title: "C Programming",
+        semester: 2,
+        folderUrl: "",
+      },
+      {
+        id: "s2_2",
+        title: "Algebra-2",
+        semester: 2,
+        folderUrl: "",
+      },
+      {
+        id: "s2_3",
+        title: "Partial Differential Equation",
+        semester: 2,
+        folderUrl: "",
+      },
+      {
+        id: "s2_4",
+        title: "Complex Analysis",
+        semester: 2,
+        folderUrl: "",
+      },
+      {
+        id: "s2_5",
+        title: "O.E.T 2.1 Basics Statistics",
+        semester: 2,
+        folderUrl: "",
+      },
+      {
+        id: "s2_6",
+        title: "C Programming Lab",
+        semester: 2,
+        folderUrl: "",
+      },
+    ],
+  },
 ]
 
