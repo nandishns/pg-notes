@@ -90,7 +90,7 @@ export function NotesGrid({
 
   return (
     <MainLayout>
-      <div className="flex flex-col gap-4 md:flex-row md:items-start">
+      <div className="flex flex-col gap-4 md:flex-row md:items-end">
         <div className="relative flex-1">
           <div className="relative">
             <Search className="absolute left-2 top-2.5 h-4 w-4 text-muted-foreground" />
