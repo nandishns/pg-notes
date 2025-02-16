@@ -28,18 +28,23 @@ export const semesters: Semester[] = [
         lessons: [
           {
             id: "algebra_1",
-            title: "Algebra - Lesson 1",
-            folderUrl: "https://drive.google.com/file/d/1AqJeOIvM4zagJ19ETa-CS_R7UmgwO2nE/view?usp=sharing",
+            title: "Unit 1",
+            folderUrl: "https://drive.google.com/file/d/1I_AyJeQ9kBhQDSeiw2rAMFX73L00AMlW/view?usp=sharing",
           },
           {
             id: "algebra_2",
-            title: "Algebra - Lesson 2",
-            folderUrl: "https://drive.google.com/file/d/1AqJeOIvM4zagJ19ETa-CS_R7UmgwO2nE/view?usp=sharing",
+            title: "Unit 2",
+            folderUrl: "https://drive.google.com/file/d/12TBVu5SrIi_cj-Wlafrqt-I_IstqRsha/view?usp=sharing",
           },
           {
             id: "algebra_3",
-            title: "Algebra - Lesson 3",
-            folderUrl: "https://drive.google.com/file/d/1AqJeOIvM4zagJ19ETa-CS_R7UmgwO2nE/view?usp=sharing",
+            title: "Unit 3",
+            folderUrl: "",
+          },
+          {
+            id: "algebra_4",
+            title: "Unit 4",
+            folderUrl: "https://drive.google.com/file/d/1q3LJnDGzJDej7MZsD-yFUWwGvJlHhWZe/view?usp=sharing",
           },
         ],
       },
@@ -49,18 +54,23 @@ export const semesters: Semester[] = [
         lessons: [
           {
             id: "real_analysis_1",
-            title: "Real Analysis - Lesson 1",
-            folderUrl: "https://drive.google.com/file/d/1AqJeOIvM4zagJ19ETa-CS_R7UmgwO2nE/view?usp=sharing",
+            title: "Unit 1",
+            folderUrl: "",
           },
           {
             id: "real_analysis_2",
-            title: "Real Analysis - Lesson 2",
-            folderUrl: "https://drive.google.com/file/d/1AqJeOIvM4zagJ19ETa-CS_R7UmgwO2nE/view?usp=sharing",
+            title: "Unit 2",
+            folderUrl: "",
           },
           {
             id: "real_analysis_3",
-            title: "Real Analysis - Lesson 3",
-            folderUrl: "https://drive.google.com/file/d/1AqJeOIvM4zagJ19ETa-CS_R7UmgwO2nE/view?usp=sharing",
+            title: "Unit 3",
+            folderUrl: "",
+          },
+          {
+            id: "real_analysis_4",
+            title: "Unit 4",
+            folderUrl: "",
           },
         ],
       },
@@ -69,9 +79,20 @@ export const semesters: Semester[] = [
         name: "General Topology",
         lessons: [
           {
-            id: "3",
-            title: "GENERAL TOPOLOGY",
-            folderUrl: "https://drive.google.com/file/d/1AqJeOIvM4zagJ19ETa-CS_R7UmgwO2nE/view?usp=sharing",
+            id: "general_topology_1",
+            title: "Unit 1",
+            folderUrl: "https://drive.google.com/file/d/1od4gG7-ORi-CwETLVEamLJlJNnmUgyPG/view?usp=sharing",
+          },
+          {
+            id: "general_topology_2_3",
+            title: "Unit 2 & 3",
+            folderUrl: "https://drive.google.com/file/d/1d-c44zKbUo0lFOWyEAiC8z0Hglzi9uXq/view?usp=sharing",
+          },
+        
+          {
+            id: "general_topology_4",
+            title: "Unit 4",
+            folderUrl: "https://drive.google.com/file/d/15VaBS574JFnD23Vt0292-TQEbZ9pFc2q/view?usp=sharing",
           },
         ],
       },
@@ -80,10 +101,27 @@ export const semesters: Semester[] = [
         name: "Ordinary Differential Equations",
         lessons: [
           {
-            id: "4",
-            title: "ORDINARY DIFFERENTIAL EQUATIONS",
-            folderUrl: "https://drive.google.com/file/d/1AqJeOIvM4zagJ19ETa-CS_R7UmgwO2nE/view?usp=sharing",
+            id: "ordinary_differential_equations_1",
+            title: "Unit 1",
+            folderUrl: "https://drive.google.com/file/d/17JnUrdxp3QqMa-mEWspoeIC8z_42E6bd/view?usp=sharing",
           },
+          {
+            id: "ordinary_differential_equations_2",
+            title: "Unit 2",
+            folderUrl: "https://drive.google.com/file/d/1emYbRKZKBFv0TVNTmw2vfAM0gE1lZDrr/view?usp=sharing",
+          },
+          {
+            id: "ordinary_differential_equations_3",
+            title: "Unit 3",
+            folderUrl: "",
+          },
+          
+          {
+            id: "ordinary_differential_equations_4",
+            title: "Unit 4",
+            folderUrl: "https://drive.google.com/file/d/1emYbRKZKBFv0TVNTmw2vfAM0gE1lZDrr/view?usp=sharing",
+          },
+          
         ],
       },
       {
@@ -91,10 +129,22 @@ export const semesters: Semester[] = [
         name: "Discrete Mathematics",
         lessons: [
           {
-            id: "5",
-            title: "DISCRETE MATHEMATICS",
-            folderUrl: "https://drive.google.com/file/d/1AqJeOIvM4zagJ19ETa-CS_R7UmgwO2nE/view?usp=sharing",
+            id: "discrete_mathematics_1",
+            title: "Unit 1",
+            folderUrl: "https://drive.google.com/file/d/1s-ucxN3UtuKULAkM5mdF3tcca5EQaVso/view?usp=sharing",
           },
+          {
+            id: "discrete_mathematics_2",
+            title: "Unit 2",
+            folderUrl: "https://drive.google.com/file/d/1kjxlUmhXVnQVqhNHqy9b8HZodkmLixaO/view?usp=sharing",
+          },
+          {
+            id: "discrete_mathematics_3",
+            title: "Unit 3",
+            folderUrl: "https://drive.google.com/file/d/1NF85ENSjCMMiqSa075hHn8BZliiLWbt4/view?usp=sharing",
+          },
+          
+          
         ],
       },
       {
@@ -102,10 +152,27 @@ export const semesters: Semester[] = [
         name: "Operations Research",
         lessons: [
           {
-            id: "6",
-            title: "OPERATIONS RESEARCH",
-            folderUrl: "https://drive.google.com/drive/folders/1wf9jWcRRUxQncPqrcQL0EQRJt8O1elrQ",
+            id: "operations_research_1",
+            title: "Unit 1",
+            folderUrl: "https://drive.google.com/file/d/1NF85ENSjCMMiqSa075hHn8BZliiLWbt4/view?usp=sharing",
           },
+          {
+            id: "operations_research_2",
+            title: "Unit 2",
+            folderUrl: "https://drive.google.com/file/d/160j8oOwRYrGs88m8lmyT-Be2V5r9mO3R/view?usp=sharing",
+          },
+          {
+            id: "operations_research_3",
+            title: "Unit 3",
+            folderUrl: "https://drive.google.com/file/d/1vFCYC3Kiq8c7Way5vWOx4inFF-1Y73q1/view?usp=sharing",
+          },
+          {
+            id: "operations_research_4",
+            title: "Unit 4",
+            folderUrl: "https://drive.google.com/file/d/1BoFojLXLf7nxrtRqMk8-z2WQin25XycU/view?usp=sharing",
+          },
+
+
         ],
       },
       {
