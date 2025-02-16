@@ -10,6 +10,8 @@ import { useToast } from "@/components/ui/use-toast"
 import { Input } from "@/components/ui/input"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { MainLayout } from "@/components/main-layout"
+import { WelcomeSection } from "@/components/welcome-section"
+import { BookOpen, CheckCircle } from "lucide-react"
 
 interface NotesGridProps {
   notes: Lesson[]
@@ -143,45 +145,7 @@ export function NotesGrid({
       </div>
 
       {selectedSubject === "0" ? (
-        <div className="text-center py-16">
-          <div className="max-w-2xl mx-auto space-y-6">
-            <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white p-8 rounded-lg shadow-lg">
-             
-              <p className="text-lg opacity-90 mb-6">
-                "Pure mathematics is, in its way, the poetry of logical ideas." 
-                <br />
-                <span className="text-sm">- Albert Einstein</span>
-              </p>
-              <div className="bg-white/10 p-4 rounded-md backdrop-blur-sm">
-                <p className="text-sm">
-                  Select a subject above to start exploring our comprehensive collection of 
-                  mathematics study materials. Each lesson is carefully crafted to help you 
-                  understand complex concepts with clarity.
-                </p>
-              </div>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
-              <div className="p-4 rounded-lg bg-muted/50">
-                <h3 className="font-medium mb-2">Structured Learning</h3>
-                <p className="text-sm text-muted-foreground">
-                  Step-by-step lessons designed for clear understanding
-                </p>
-              </div>
-              <div className="p-4 rounded-lg bg-muted/50">
-                <h3 className="font-medium mb-2">Quality Content</h3>
-                <p className="text-sm text-muted-foreground">
-                  Curated materials from experienced educators
-                </p>
-              </div>
-              <div className="p-4 rounded-lg bg-muted/50">
-                <h3 className="font-medium mb-2">Easy Access</h3>
-                <p className="text-sm text-muted-foreground">
-                  View or download notes at your convenience
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <WelcomeSection />
       ) : notes.length > 0 ? (
         <section 
           className="grid gap-4 md:grid-cols-2 lg:grid-cols-3"
