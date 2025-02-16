@@ -44,10 +44,7 @@ export function WelcomeSection() {
 
   return (
     <div className="space-y-8 px-4">
-      <Quote 
-        text={quote.text}
-        author={quote.author}
-      />
+     
       
       <div className="bg-card p-6 rounded-lg border shadow-sm">
         <h2 className="text-lg font-semibold mb-4 text-center">Welcome</h2>
@@ -69,6 +66,10 @@ export function WelcomeSection() {
          
         </div>
       </div>
+      <Quote 
+        text={quote.text}
+        author={quote.author}
+      />
     </div>
   );
 } 
