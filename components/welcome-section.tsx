@@ -43,33 +43,34 @@ export function WelcomeSection() {
   }, []);
 
   return (
-    <div className="space-y-8 px-4">
-     
-      
-      <div className="bg-card p-6 rounded-lg border shadow-sm">
-        <h2 className="text-lg font-semibold mb-4 text-center">Welcome</h2>
-        <p className="text-sm text-center text-muted-foreground mb-6">
-          Select a subject above to start exploring our comprehensive collection of mathematics study materials.
-        </p>
-        
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          <FeatureCard
-            title="Structured Learning"
-            description="Step-by-step lessons designed for clear understanding"
-            icon={<BookOpen className="h-4 w-4 text-blue-500" />}
-          />
-          <FeatureCard
-            title="Easy Access"
-            description="View or download notes at your convenience"
-            icon={<Download className="h-4 w-4 text-green-500" />}
-          />
-         
+    <div className="container mx-auto">
+      <div className="max-w-4xl mx-auto space-y-8">
+        <div className="bg-card p-6 rounded-lg border shadow-sm">
+          <h2 className="text-lg font-semibold mb-4 text-center">Welcome <span role="img" aria-label="welcome" className="animate-wave">
+              👋
+            </span> </h2>
+          <p className="text-sm text-center text-muted-foreground mb-6">
+            Select a subject above to start exploring our comprehensive collection of mathematics study materials.
+          </p>
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-2xl mx-auto">
+            <FeatureCard
+              title="Structured Learning"
+              description="Step-by-step lessons designed for clear understanding"
+              icon={<BookOpen className="h-4 w-4 text-blue-500" />}
+            />
+            <FeatureCard
+              title="Easy Access"
+              description="View or download notes at your convenience"
+              icon={<Download className="h-4 w-4 text-green-500" />}
+            />
+          </div>
         </div>
+        <Quote 
+          text={quote.text}
+          author={quote.author}
+        />
       </div>
-      <Quote 
-        text={quote.text}
-        author={quote.author}
-      />
     </div>
   );
 } 

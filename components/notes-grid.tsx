@@ -92,116 +92,126 @@ export function NotesGrid({
 
   return (
     <MainLayout>
-      <div className="flex flex-col gap-4 md:flex-row md:items-end">
-        <div className="relative flex-1">
-          <div className="relative">
-            <Search className="absolute left-2 top-2.5 h-4 w-4 text-muted-foreground" />
-            <Input
-              placeholder="Search notes..."
-              className="pl-8"
-              value={searchQuery}
-              onChange={(e) => onSearchChange(e.target.value)}
-            />
+      <div className="container px-4 md:px-8 lg:px-12 mx-auto max-w-7xl">
+        {/* Filter Section */}
+        <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between mb-8">
+          {/* Search Bar */}
+          <div className="relative w-full md:max-w-md lg:max-w-lg xl:max-w-xl">
+            <div className="relative md:pl-4">
+              <Search className="absolute left-2 md:left-6 top-2.5 h-4 w-4 text-muted-foreground" />
+              <Input
+                placeholder="Search notes..."
+                className="pl-8 w-full"
+                value={searchQuery}
+                onChange={(e) => onSearchChange(e.target.value)}
+              />
+            </div>
+          </div>
+          {/* Filters */}
+          <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
+            <div className="flex-1 md:w-[180px]">
+              <label className="text-xs font-medium mb-1 block text-muted-foreground pl-2">
+                Select Semester
+              </label>
+              <Select value={selectedSemester} onValueChange={onSemesterChange}>
+                <SelectTrigger className="w-full">
+                  <SelectValue placeholder="Select semester" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="0">All Semesters</SelectItem>
+                  {semesters.map((semester) => (
+                    <SelectItem key={semester.id} value={semester.id.toString()}>
+                      {semester.name}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+            </div>
+            <div className="flex-1 md:w-[220px]">
+              <label className="text-xs font-medium mb-1 block text-muted-foreground pl-2">
+                Select Subject
+              </label>
+              <Select value={selectedSubject} onValueChange={onSubjectChange}>
+                <SelectTrigger className="w-full">
+                  <SelectValue placeholder="Select a subject" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="0">Select subject</SelectItem>
+                  {subjects.map((subject) => (
+                    <SelectItem key={subject.id} value={subject.id}>
+                      {subject.name}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+            </div>
           </div>
         </div>
-        <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
-          <div className="flex-1 md:flex-initial">
-            <label className="text-xs font-medium mb-1 block text-muted-foreground pl-2">
-              Select Semester
-            </label>
-            <Select value={selectedSemester} onValueChange={onSemesterChange}>
-              <SelectTrigger className="w-full md:w-[150px]">
-                <SelectValue placeholder="Select semester" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="0">All Semesters</SelectItem>
-                {semesters.map((semester) => (
-                  <SelectItem key={semester.id} value={semester.id.toString()}>
-                    {semester.name}
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
-          </div>
-          <div className="flex-1 md:flex-initial">
-            <label className="text-xs font-medium mb-1 block text-muted-foreground pl-2">
-              Select Subject
-            </label>
-            <Select value={selectedSubject} onValueChange={onSubjectChange}>
-              <SelectTrigger className="w-full md:w-[200px]">
-                <SelectValue placeholder="Select a subject" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="0">Select subject</SelectItem>
-                {subjects.map((subject) => (
-                  <SelectItem key={subject.id} value={subject.id}>
-                    {subject.name}
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
-          </div>
+
+        {/* Content Section */}
+        <div className="w-full max-w-7xl mx-auto">
+          {selectedSubject === "0" ? (
+            <div className="max-w-5xl mx-auto">
+              <WelcomeSection />
+            </div>
+          ) : notes.length > 0 ? (
+            <section 
+              className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3"
+              aria-label="Study notes collection"
+            >
+              {notes.map((note) => (
+                <article key={note.id}>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle className="line-clamp-2">
+                        <h2 className="text-base">{note.title}</h2>
+                      </CardTitle>
+                      {note.description && (
+                        <CardDescription>
+                          <p>{note.description}</p>
+                        </CardDescription>
+                      )}
+                    </CardHeader>
+                    <CardContent>
+                      <div className="flex gap-2">
+                        <Button
+                          variant="outline"
+                          className="flex-1"
+                          onClick={() => handleSelectNote(note)}
+                          aria-label={`View ${note.title}`}
+                        >
+                          {note.folderUrl ? (
+                            <ExternalLink className="mr-2 h-4 w-4" />
+                          ) : (
+                            <Clock className="mr-2 h-4 w-4" />
+                          )}
+                          View
+                        </Button>
+                        <Button
+                          variant="secondary"
+                          className="flex-1"
+                          onClick={() => handleDownload(note)}
+                          aria-label={`Download ${note.title}`}
+                        >
+                          <Download className="mr-2 h-4 w-4" />
+                          Download
+                        </Button>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </article>
+              ))}
+            </section>
+          ) : (
+            <div className="text-center py-12">
+              <h3 className="text-lg font-semibold">No notes found</h3>
+              <p className="text-sm text-muted-foreground mt-2">
+                Try adjusting your search or filter criteria
+              </p>
+            </div>
+          )}
         </div>
       </div>
-
-      {selectedSubject === "0" ? (
-        <WelcomeSection />
-      ) : notes.length > 0 ? (
-        <section 
-          className="grid gap-4 md:grid-cols-2 lg:grid-cols-3"
-          aria-label="Study notes collection"
-        >
-          {notes.map((note) => (
-            <article key={note.id}>
-              <Card>
-                <CardHeader>
-                  <CardTitle className="line-clamp-2">
-                    <h2 className="text-base">{note.title}</h2>
-                  </CardTitle>
-                  {note.description && (
-                    <CardDescription>
-                      <p>{note.description}</p>
-                    </CardDescription>
-                  )}
-                </CardHeader>
-                <CardContent>
-                  <div className="flex gap-2">
-                    <Button
-                      variant="outline"
-                      className="flex-1"
-                      onClick={() => handleSelectNote(note)}
-                      aria-label={`View ${note.title}`}
-                    >
-                      {note.folderUrl ? (
-                        <ExternalLink className="mr-2 h-4 w-4" />
-                      ) : (
-                        <Clock className="mr-2 h-4 w-4" />
-                      )}
-                      View
-                    </Button>
-                    <Button
-                      variant="secondary"
-                      className="flex-1"
-                      onClick={() => handleDownload(note)}
-                      aria-label={`Download ${note.title}`}
-                    >
-                      <Download className="mr-2 h-4 w-4" />
-                      Download
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-            </article>
-          ))}
-        </section>
-      ) : (
-        <div className="text-center py-12">
-          <h3 className="text-lg font-semibold">No notes found</h3>
-          <p className="text-sm text-muted-foreground mt-2">
-            Try adjusting your search or filter criteria
-          </p>
-        </div>
-      )}
     </MainLayout>
   )
 }
