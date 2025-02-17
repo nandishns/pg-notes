@@ -5,10 +5,16 @@ export interface Lesson {
   folderUrl: string
 }
 
+export interface PYQPaper {
+  year: number
+  paperUrl?: string
+}
+
 export interface Subject {
   id: string
   name: string
   lessons: Lesson[]
+  pyqPapers?: PYQPaper[]
 }
 
 export interface Semester {

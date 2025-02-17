@@ -12,6 +12,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { MainLayout } from "@/components/main-layout"
 import { WelcomeSection } from "@/components/welcome-section"
 import { BookOpen, CheckCircle } from "lucide-react"
+import { PYQSection } from "@/components/pyq-section"
 
 interface NotesGridProps {
   notes: Lesson[]
@@ -155,53 +156,60 @@ export function NotesGrid({
               <WelcomeSection />
             </div>
           ) : notes.length > 0 ? (
-            <section 
-              className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3"
-              aria-label="Study notes collection"
-            >
-              {notes.map((note) => (
-                <article key={note.id}>
-                  <Card>
-                    <CardHeader>
-                      <CardTitle className="line-clamp-2">
-                        <h2 className="text-base">{note.title}</h2>
-                      </CardTitle>
-                      {note.description && (
-                        <CardDescription>
-                          <p>{note.description}</p>
-                        </CardDescription>
-                      )}
-                    </CardHeader>
-                    <CardContent>
-                      <div className="flex gap-2">
-                        <Button
-                          variant="outline"
-                          className="flex-1"
-                          onClick={() => handleSelectNote(note)}
-                          aria-label={`View ${note.title}`}
-                        >
-                          {note.folderUrl ? (
-                            <ExternalLink className="mr-2 h-4 w-4" />
-                          ) : (
-                            <Clock className="mr-2 h-4 w-4" />
-                          )}
-                          View
-                        </Button>
-                        <Button
-                          variant="secondary"
-                          className="flex-1"
-                          onClick={() => handleDownload(note)}
-                          aria-label={`Download ${note.title}`}
-                        >
-                          <Download className="mr-2 h-4 w-4" />
-                          Download
-                        </Button>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </article>
-              ))}
-            </section>
+            <>
+              <section 
+                className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3"
+                aria-label="Study notes collection"
+              >
+                {notes.map((note) => (
+                  <article key={note.id}>
+                    <Card>
+                      <CardHeader className="py-4 px-4">
+                        <CardTitle className="text-base font-medium line-clamp-2">
+                          <h2>{note.title}</h2>
+                        </CardTitle>
+                        {note.description && (
+                          <CardDescription className="text-sm">
+                            <p>{note.description}</p>
+                          </CardDescription>
+                        )}
+                      </CardHeader>
+                      <CardContent className="py-2 px-4">
+                        <div className="flex gap-2">
+                          <Button
+                            variant="outline"
+                            className="flex-1 h-8 text-sm"
+                            onClick={() => handleSelectNote(note)}
+                            aria-label={`View ${note.title}`}
+                          >
+                            {note.folderUrl ? (
+                              <ExternalLink className="mr-2 h-3 w-3" />
+                            ) : (
+                              <Clock className="mr-2 h-3 w-3" />
+                            )}
+                            View
+                          </Button>
+                          <Button
+                            variant="secondary"
+                            className="flex-1 h-8 text-sm"
+                            onClick={() => handleDownload(note)}
+                            aria-label={`Download ${note.title}`}
+                          >
+                            <Download className="mr-2 h-3 w-3" />
+                            Download
+                          </Button>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </article>
+                ))}
+              </section>
+              
+              {/* Add PYQ Section after notes */}
+              <PYQSection 
+                subjectName={subjects.find(s => s.id === selectedSubject)?.name || ""}
+              />
+            </>
           ) : (
             <div className="text-center py-12">
               <h3 className="text-lg font-semibold">No notes found</h3>
