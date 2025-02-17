@@ -1,6 +1,10 @@
 import { SiteHeader } from "@/components/site-header"
+import { useVisitorCount } from "@/lib/hooks/use-visitor-count"
+import { Users } from "lucide-react"
 
 export function MainLayout({ children }: { children: React.ReactNode }) {
+  const visitorCount = useVisitorCount()
+
   return (
     <div className="flex min-h-screen flex-col">
       <SiteHeader />
@@ -35,6 +39,15 @@ export function MainLayout({ children }: { children: React.ReactNode }) {
               </div>
             </div>
            
+            <div className="flex items-center justify-center gap-2 mt-4 text-gray-400">
+              <Users className="h-4 w-4" />
+              <span className="text-xs">
+                {visitorCount === null 
+                  ? 'Loading...' 
+                  : `${(visitorCount || 0).toLocaleString()} views`}
+              </span>
+            </div>
+            
             <p className="text-xs text-gray-400 mt-2">&copy; {new Date().getFullYear()} Department of Mathematics, CBPG Bhalki</p>
           </div>
         </div>
