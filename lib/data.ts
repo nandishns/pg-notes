@@ -53,6 +53,17 @@ export const semesters: Semester[] = [
             folderUrl: "https://drive.google.com/file/d/1q3LJnDGzJDej7MZsD-yFUWwGvJlHhWZe/view?usp=sharing",
           },
         ],
+        pyqPapers: [
+          {
+            year: 2024,
+            paperUrl: "https://drive.google.com/file/d/1bylCyBu2pUOOmBGhSkIkKHZtkB2Bi0iW/view?usp=sharing",
+          },
+          {
+            year: 2023,
+            paperUrl : "https://drive.google.com/file/d/1qn1Dhnrl8iw_jTvZs7iPIRiDUMisS6dU/view?usp=sharing"
+          }
+          
+        ],
       },
       {
         id: "real_analysis",
@@ -79,6 +90,16 @@ export const semesters: Semester[] = [
             folderUrl: "",
           },
         ],
+        pyqPapers: [
+          {
+            year: 2024,
+            paperUrl: "https://drive.google.com/file/d/1vgvo-5WOIp4z80rCYF3oAa_J3bL3dOeL/view?usp=sharing",
+          },
+          {
+            year: 2023,
+            paperUrl: "https://drive.google.com/file/d/1dvuKSKhUOJO8JaKS076XoHEBGjvAn9Xo/view?usp=sharing",
+          },
+        ],
       },
       {
         id: "general_topology",
@@ -99,6 +120,16 @@ export const semesters: Semester[] = [
             id: "general_topology_4",
             title: "Unit 4",
             folderUrl: "https://drive.google.com/file/d/15VaBS574JFnD23Vt0292-TQEbZ9pFc2q/view?usp=sharing",
+          },
+        ],
+        pyqPapers: [
+          {
+            year: 2024,
+            paperUrl: "https://drive.google.com/file/d/1wfLn8TCKiK5WgPysDw_hPMjPnx0d9CTK/view?usp=sharing",
+          },
+          {
+            year: 2023,
+            paperUrl: "https://drive.google.com/file/d/1u6yjzNiHROdfUU5JXiZSIYkgX5n3-2ZX/view?usp=sharing",
           },
         ],
       },
@@ -129,6 +160,16 @@ export const semesters: Semester[] = [
           },
           
         ],
+        pyqPapers :[
+          {
+            year: 2024,
+            paperUrl: "https://drive.google.com/file/d/1n3hQl1iDRBekLd6QZrL6h0B197RnDkkA/view?usp=sharing",
+          },
+          {
+            year: 2023,
+            paperUrl: "https://drive.google.com/file/d/1Zhk5HRgoXFf_dyNUZfTMVO50E6vv4Gy9/view?usp=sharing",
+          },
+        ]
       },
       {
         id: "discrete_mathematics",
@@ -152,6 +193,16 @@ export const semesters: Semester[] = [
           
           
         ],
+        pyqPapers :[
+          {
+            year: 2024,
+            paperUrl: "https://drive.google.com/file/d/1a_YSM06_wAcZKF5pr57Cbm-r3XwjtjiM/view?usp=sharing",
+          },
+          {
+            year: 2023,
+            paperUrl: "https://drive.google.com/file/d/1M3Vmr0RBQr5iz5vpTplflaDWzVnb1xKU/view?usp=sharing",
+          },
+        ]
       },
       {
         id: "operations_research",
@@ -180,6 +231,16 @@ export const semesters: Semester[] = [
 
 
         ],
+        pyqPapers :[
+          {
+            year: 2024,
+            paperUrl: "https://drive.google.com/file/d/1T43uE2Dxjj9_b1kmz7Yi2ltOta-4md4A/view?usp=sharing",
+          },
+          {
+            year: 2023,
+            paperUrl: "https://drive.google.com/file/d/1fqLFzGgbnmhC0mdwOdU0FhnvTD43t4O1/view?usp=sharing",
+          },
+        ]
       },
       {
         id: "number_theory",

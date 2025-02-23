@@ -5,7 +5,7 @@ import { ExternalLink, Download, Clock, Search } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { PreviewPage } from "@/components/preview-page"
-import type { Lesson, Semester } from "@/lib/data"
+import type { Lesson, PYQPaper, Semester } from "@/lib/data"
 import { useToast } from "@/components/ui/use-toast"
 import { Input } from "@/components/ui/input"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
@@ -39,7 +39,8 @@ export function NotesGrid({
   searchQuery,
   onSearchChange
 }: NotesGridProps) {
-  const [selectedNote, setSelectedNote] = useState<Lesson | null>(null)
+  const [selectedNote, setSelectedNote] = useState<Lesson | null>(null) 
+  const [selectedPaper, setSelectedPaper] = useState<PYQPaper | null>(null)
   const { toast } = useToast()
 
   const getFileId = (url: string) => {
@@ -57,8 +58,8 @@ export function NotesGrid({
     return fileId ? `https://drive.google.com/uc?export=download&id=${fileId}` : url
   }
 
-  const handleDownload = (note: Lesson) => {
-    if (!note.folderUrl) {
+  const handleDownload = (url: string) => {
+    if (!url) {
       toast({
         title: "Coming Soon",
         description: "These notes will be available for download soon! 📚",
@@ -66,7 +67,7 @@ export function NotesGrid({
       })
       return
     }
-    window.open(getDownloadUrl(note.folderUrl), "_blank")
+    window.open(getDownloadUrl(url), "_blank")
   }
 
   const handleSelectNote = (note: Lesson) => {
@@ -87,6 +88,19 @@ export function NotesGrid({
       <PreviewPage 
         lesson={selectedNote} 
         onBack={handleBack}
+      />
+    )
+  }
+  if(selectedPaper){
+    return (
+      <PreviewPage 
+        lesson={ {
+          id: selectedPaper.year.toString(),
+          title: selectedPaper.year.toString(),
+          description: selectedPaper.paperUrl,
+          folderUrl: selectedPaper.paperUrl || ""
+        }} 
+        onBack={() => setSelectedPaper(null)}
       />
     )
   }
@@ -192,7 +206,7 @@ export function NotesGrid({
                           <Button
                             variant="secondary"
                             className="flex-1 h-8 text-sm"
-                            onClick={() => handleDownload(note)}
+                            onClick={() => handleDownload(note.folderUrl || "")}
                             aria-label={`Download ${note.title}`}
                           >
                             <Download className="mr-2 h-3 w-3" />
@@ -207,7 +221,10 @@ export function NotesGrid({
               
               {/* Add PYQ Section after notes */}
               <PYQSection 
-                subjectName={subjects.find(s => s.id === selectedSubject)?.name || ""}
+                subject={subjects.find(s => s.id === selectedSubject) || { id: "", name: "", lessons: [], pyqPapers: [] } }
+                selectedPaper={selectedPaper}
+                setSelectedPaper={setSelectedPaper}
+                handleDownload={handleDownload}
               />
             </>
           ) : (

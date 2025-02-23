@@ -2,40 +2,30 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Download, Clock, ExternalLink } from "lucide-react"
 import { useToast } from "@/components/ui/use-toast"
-
+import { Subject, Lesson } from "@/lib/data"
+import { PreviewPage } from "@/components/preview-page"
+import { useState } from "react"
 interface PYQPaper {
   year: number
   paperUrl?: string
 }
 
 interface PYQSectionProps {
-  subjectName: string
+  subject: Subject,
+  selectedPaper: PYQPaper | null,
+  setSelectedPaper: (paper: PYQPaper | null) => void
+  handleDownload: (url: string) => void
 }
 
-export function PYQSection({ subjectName }: PYQSectionProps) {
+export function PYQSection({ subject, selectedPaper, setSelectedPaper, handleDownload }: PYQSectionProps) {
   const { toast } = useToast()
-  
-  // Generate last 4 years
-  const currentYear = new Date().getFullYear()
-  const papers: PYQPaper[] = Array.from({ length: 4 }, (_, i) => ({
-    year: currentYear - i - 1,
-  }))
 
-  const handleDownload = (year: number) => {
-    toast({
-      title: "Coming Soon",
-      description: "Past year papers will be available for download soon! 📚",
-      duration: 3000,
-    })
-  }
+  const papers: PYQPaper[] = subject.pyqPapers?.map((paper) => ({
+    year: paper.year,
+    paperUrl: paper.paperUrl,
+  })) || []
 
-  const handleView = (year: number) => {
-    toast({
-      title: "Coming Soon",
-      description: "Past year papers will be available to view soon! 📚",
-      duration: 3000,
-    })
-  }
+
 
   return (
     <section className="mt-8 mb-6">
@@ -53,7 +43,7 @@ export function PYQSection({ subjectName }: PYQSectionProps) {
                 <Button 
                   variant="outline"
                   className="flex-1 h-8 text-sm"
-                  onClick={() => handleView(paper.year)}
+                  onClick={() => setSelectedPaper(paper)}
                   aria-label={`View ${paper.year} Paper`}
                 >
                   {paper.paperUrl ? (
@@ -66,7 +56,7 @@ export function PYQSection({ subjectName }: PYQSectionProps) {
                 <Button 
                   variant="secondary"
                   className="flex-1 h-8 text-sm"
-                  onClick={() => handleDownload(paper.year)}
+                  onClick={() => handleDownload(paper.paperUrl || "")}
                   aria-label={`Download ${paper.year} Paper`}
                 >
                   <Download className="mr-2 h-3 w-3" />
