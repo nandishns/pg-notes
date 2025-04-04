@@ -45,7 +45,7 @@ export const semesters: Semester[] = [
           {
             id: "algebra_3",
             title: "Unit 3",
-            folderUrl: "",
+            folderUrl: "https://drive.google.com/file/d/1zoImLWMsQWCuUYkRR6DpVNOLxClWa1aM/view?usp=sharing",
           },
           {
             id: "algebra_4",
@@ -72,17 +72,17 @@ export const semesters: Semester[] = [
           {
             id: "real_analysis_1",
             title: "Unit 1",
-            folderUrl: "",
+            folderUrl: "https://drive.google.com/file/d/1oQ4sNi1s9kro-2VYxxpYRefgkImIgjNZ/view?usp=sharing",
           },
           {
             id: "real_analysis_2",
             title: "Unit 2",
-            folderUrl: "",
+            folderUrl: "https://drive.google.com/file/d/1wve1aZwrXlUiDHbm3pp_sZQndizdLVH5/view?usp=sharing",
           },
           {
             id: "real_analysis_3",
             title: "Unit 3",
-            folderUrl: "",
+            folderUrl: "https://drive.google.com/file/d/1BGK1If93PyR-0jaZO5L75r7gSFSi_vHd/view?usp=sharing",
           },
           {
             id: "real_analysis_4",
@@ -150,7 +150,7 @@ export const semesters: Semester[] = [
           {
             id: "ordinary_differential_equations_3",
             title: "Unit 3",
-            folderUrl: "",
+            folderUrl: "https://drive.google.com/file/d/1BGK1If93PyR-0jaZO5L75r7gSFSi_vHd/view?usp=sharing",
           },
           
           {
@@ -211,7 +211,7 @@ export const semesters: Semester[] = [
           {
             id: "operations_research_1",
             title: "Unit 1",
-            folderUrl: "https://drive.google.com/file/d/1NF85ENSjCMMiqSa075hHn8BZliiLWbt4/view?usp=sharing",
+            folderUrl: "https://drive.google.com/file/d/1WukFwFGWiSn0TqI61dMuBv3ntqqnOhuV/view?usp=sharing",
           },
           {
             id: "operations_research_2",
