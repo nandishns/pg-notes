@@ -265,18 +265,18 @@ export const semesters: Semester[] = [
         lessons: [
           {
             id: "complex_analysis_1",
-            title: "Complex Analysis - Lesson 1",
-            folderUrl: "https://drive.google.com/file/d/1AqJeOIvM4zagJ19ETa-CS_R7UmgwO2nE/view?usp=sharing",
+            title: "UNIT 1",
+            folderUrl: "https://drive.google.com/file/d/1rkVKgo_PELOqRHfAPO5S6gnkxupePWdd/view?usp=sharing",
           },
           {
             id: "complex_analysis_2",
-            title: "Complex Analysis - Lesson 2",
-            folderUrl: "https://drive.google.com/file/d/1AqJeOIvM4zagJ19ETa-CS_R7UmgwO2nE/view?usp=sharing",
+            title: "UNIT 2",
+            folderUrl: "https://drive.google.com/file/d/12t8OdII92j5byMtqO0l7J5Xig5oJA21p/view?usp=sharing",
           },
           {
             id: "complex_analysis_3",
-            title: "Complex Analysis - Lesson 3",
-            folderUrl: "https://drive.google.com/file/d/1AqJeOIvM4zagJ19ETa-CS_R7UmgwO2nE/view?usp=sharing",
+            title: "UNIT 3",
+            folderUrl: "https://drive.google.com/file/d/1rkVKgo_PELOqRHfAPO5S6gnkxupePWdd/view?usp=sharing",
           },
         ],
       },
@@ -285,9 +285,14 @@ export const semesters: Semester[] = [
         name: "Partial Differential Equations",
         lessons: [
           {
-            id: "s2_2",
-            title: "PARTIAL DIFFERENTIAL EQUATIONS",
-            folderUrl: "",
+            id: "partial_differential_equation-1",
+            title: "UNIT 1",
+            folderUrl: "https://drive.google.com/file/d/1rCKI6QqSMdaADd4zJN_NeZ9KDznFU23J/view?usp=drive_link",
+          },
+           {
+            id: "partial_differential_equation-2",
+            title: "UNIT 2",
+            folderUrl: "https://drive.google.com/file/d/1NLz7EfrpegcC4W21F50TS_eycUwAHeRD/view?usp=drive_link",
           },
         ],
       },
@@ -296,14 +301,24 @@ export const semesters: Semester[] = [
         name: "Basics of C-Programming and MATLAB",
         lessons: [
           {
-            id: "s2_3",
-            title: "BASICS OF C-PROGRAMMING AND MATLAB",
-            folderUrl: "",
+            id: "basics_of_c_1",
+            title: "C PROGRAMMING - UNIT 1",
+            folderUrl: "https://drive.google.com/file/d/1v9FoQCRdrV91j7SYFveR0q1NNlI87iEA/view",
           },
           {
-            id: "s2_4",
-            title: "BASICS OF C-PROGRAMMING AND MATLAB (PRACTICALS)",
-            folderUrl: "",
+            id: "basics_of_c_2",
+            title: "C PROGRAMMING - UNIT 2",
+            folderUrl: "https://drive.google.com/file/d/1ZF-8shng6kEaDyNz2fZHFlKYqdVlxECS/view",
+          },
+           {
+            id: "basics_of_c_2",
+            title: "MATLAB - UNIT 3",
+            folderUrl: "https://drive.google.com/file/d/1Ww-MkcD477RMkn0v2utRbn8gl0FnAtB3/view?usp=drive_link",
+          },
+           {
+            id: "basics_of_c_2",
+            title: "MATLAB - UNIT 4",
+            folderUrl: "https://drive.google.com/file/d/1aHkrt1yoRwjl4mmTEm5ECOUL84qkPuLd/view?usp=drive_link",
           },
         ],
       },
@@ -312,42 +327,50 @@ export const semesters: Semester[] = [
         name: "Fuzzy Sets and Systems",
         lessons: [
           {
-            id: "s2_5",
-            title: "FUZZY SETS AND SYSTEMS",
-            folderUrl: "",
+            id: "sets_chap_1",
+            title: "UNIT 1",
+            folderUrl: "https://drive.google.com/file/d/1Y2tNRsA4N5R-bS_4tPcmzNMAg3oafyje/view?usp=sharing",
+          },
+          {
+            id: "sets_chap_2",
+            title: "UNIT 2",
+            folderUrl: "https://drive.google.com/file/d/1q8cdbLnLCZvdQY4ak1BMIuc1hzHJF8mw/view?usp=sharing",
+          },
+          {
+            id: "sets_chap_3",
+            title: "UNIT 3",
+            folderUrl: "https://drive.google.com/file/d/1JD5CbqLDRP3VHtmF2pH6A9J4HhTURIss/view?usp=sharing",
+          },
+          {
+            id: "sets_chap_4",
+            title: "UNIT 4",
+            folderUrl: "https://drive.google.com/file/d/1Y5Rj_UVcPJXUN-6TQBwt5-h88dhZjG1W/view?usp=sharing",
           },
         ],
       },
-      {
-        id: "fourier_transforms_and_integral_equations",
-        name: "Fourier Transforms and Integral Equations",
+     {
+        id: "fundamentals_of_computer",
+        name: "Fundamentals of Computer",
         lessons: [
           {
-            id: "s2_6",
-            title: "FOURIER TRANSFORMS AND INTEGRAL EQUATIONS",
-            folderUrl: "",
+            id: "fundaments_1",
+            title: "UNIT-1",
+            folderUrl: "https://drive.google.com/file/d/1uducF2NEw7owr18KcmgE3GKFfXdprtka/view?usp=drive_link",
           },
-        ],
-      },
-      {
-        id: "operations_research_i",
-        name: "Operations Research – I",
-        lessons: [
           {
-            id: "s2_7",
-            title: "OPERATIONS RESEARCH – I",
-            folderUrl: "",
+            id: "fundaments_2",
+            title: "UNIT 2",
+            folderUrl: "https://drive.google.com/file/d/1mdA1BUTla1Ki2yNeWoHgBcrZu0EBHiMg/view?usp=drive_link",
           },
-        ],
-      },
-      {
-        id: "operations_research_i_practicals",
-        name: "Operations Research – I (PRACTICALS)",
-        lessons: [
-          {
-            id: "s2_8",
-            title: "OPERATIONS RESEARCH – I (PRACTICALS)",
-            folderUrl: "",
+           {
+            id: "fundaments_3",
+            title: "UNIT 3",
+            folderUrl: "https://drive.google.com/file/d/1p705978Vtm-pwwd37yBiO_TYSVJ53zz_/view?usp=drive_link",
+          },
+           {
+            id: "fundaments_4",
+            title: "UNIT 4",
+            folderUrl: "https://drive.google.com/file/d/1LWMdAV_8fHOAUgpxH_PLUmh0yt1_77y4/view?usp=drive_link",
           },
         ],
       },
