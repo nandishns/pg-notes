@@ -311,12 +311,12 @@ export const semesters: Semester[] = [
             folderUrl: "https://drive.google.com/file/d/1ZF-8shng6kEaDyNz2fZHFlKYqdVlxECS/view",
           },
            {
-            id: "basics_of_c_2",
+            id: "basics_of_c_3",
             title: "MATLAB - UNIT 3",
             folderUrl: "https://drive.google.com/file/d/1Ww-MkcD477RMkn0v2utRbn8gl0FnAtB3/view?usp=drive_link",
           },
            {
-            id: "basics_of_c_2",
+            id: "basics_of_c_4",
             title: "MATLAB - UNIT 4",
             folderUrl: "https://drive.google.com/file/d/1aHkrt1yoRwjl4mmTEm5ECOUL84qkPuLd/view?usp=drive_link",
           },
