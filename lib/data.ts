@@ -278,6 +278,11 @@ export const semesters: Semester[] = [
             title: "UNIT 3",
             folderUrl: "https://drive.google.com/file/d/1rkVKgo_PELOqRHfAPO5S6gnkxupePWdd/view?usp=sharing",
           },
+          {
+            id: "complex_analysis_4",
+            title: "UNIT 4",
+            folderUrl: "https://drive.google.com/file/d/1NT5NCh345maeW6-QU2qrOO0Jff_Qho5w/view?usp=sharing",
+          },
         ],
       },
       {
@@ -292,7 +297,17 @@ export const semesters: Semester[] = [
            {
             id: "partial_differential_equation-2",
             title: "UNIT 2",
-            folderUrl: "https://drive.google.com/file/d/1NLz7EfrpegcC4W21F50TS_eycUwAHeRD/view?usp=drive_link",
+            folderUrl: "https://drive.google.com/file/d/1KB_kxyld-EL4eqhy1nZeNlAOlLTwlzrS/view?usp=sharing",
+          },
+           {
+            id: "partial_differential_equation-3",
+            title: "UNIT 3",
+            folderUrl: "https://drive.google.com/file/d/1tiMVodJgbk414GKKdS4c_fO-rx2Zh5lJ/view?usp=sharing",
+          },
+           {
+            id: "partial_differential_equation-4",
+            title: "UNIT 4",
+            folderUrl: "https://drive.google.com/file/d/1rBAcOxbLIwePDPc-0kg4IPSeAOjOdLRb/view?usp=sharing",
           },
         ],
       },
