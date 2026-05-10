@@ -34,13 +34,13 @@ export function SiteHeader() {
         <div className="hidden h-12 w-12 shrink-0 sm:block" aria-hidden="true" />
       </div>
 
-      <div className="border-t border-border/50 bg-secondary/40">
-        <div className="mx-auto flex max-w-6xl items-center justify-center gap-2 px-4 py-1.5 sm:px-6 lg:px-8">
-          <span className="h-1 w-1 rounded-full bg-accent" />
-          <p className="font-display text-[11px] font-medium uppercase tracking-[0.28em] text-foreground/80 sm:text-xs">
+      <div className="border-t border-primary/20 bg-primary">
+        <div className="mx-auto flex max-w-6xl items-center justify-center gap-2 px-4 py-2 sm:px-6 lg:px-8">
+          <span className="h-1.5 w-1.5 rounded-full bg-amber-400" />
+          <p className="font-display text-[11px] font-medium uppercase tracking-[0.28em] text-primary-foreground sm:text-xs">
             Department of Mathematics
           </p>
-          <span className="h-1 w-1 rounded-full bg-accent" />
+          <span className="h-1.5 w-1.5 rounded-full bg-amber-400" />
         </div>
       </div>
     </header>
