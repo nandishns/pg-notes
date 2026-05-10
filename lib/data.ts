@@ -539,29 +539,29 @@ export const semesters: Semester[] = [
         ],
       },
       {
-        id: "numerical_analysis",
-        name: "Numerical Analysis",
+        id: "numerical_methods",
+        name: "Numerical Methods",
         lessons: [
           {
-            id: "numerical_analysis_1",
+            id: "numerical_methods_1",
             title: "UNIT 1",
             folderUrl:
               "https://drive.google.com/file/d/1McKkxAhW85n1dl04f_ClWNv60N6jZ8KW/view?usp=sharing",
           },
           {
-            id: "numerical_analysis_2",
+            id: "numerical_methods_2",
             title: "UNIT 2",
             folderUrl:
               "https://drive.google.com/file/d/13jiDwQfXYFpjSkWggcXwbA6oMTTiGg7v/view?usp=sharing",
           },
           {
-            id: "numerical_analysis_3",
+            id: "numerical_methods_3",
             title: "UNIT 3",
             folderUrl:
               "https://drive.google.com/file/d/1VbB7q4GmCh0CHaza1CDOu0RSeJAK3Trn/view?usp=sharing",
           },
           {
-            id: "numerical_analysis_4",
+            id: "numerical_methods_4",
             title: "UNIT 4",
             folderUrl:
               "https://drive.google.com/file/d/1gex1OdFLm9GDHuiDcdAQgDVAEDCg4Hxo/view?usp=sharing",
@@ -569,34 +569,14 @@ export const semesters: Semester[] = [
         ],
       },
       {
-        id: "numerical_methods",
-        name: "Numerical Methods",
+        id: "numerical_methods_practical",
+        name: "Numerical Methods Practical",
         lessons: [
           {
-            id: "numerical_methods_manual_hcp_3_3",
+            id: "numerical_methods_practical_manual_hcp_3_3",
             title: "Manual for HCP-3.3",
             folderUrl:
               "https://drive.google.com/file/d/11adpYzeAQhSmUAXbiLakw3ZO_-TC46fU/view?usp=sharing",
-          },
-          {
-            id: "numerical_methods_1",
-            title: "UNIT 1",
-            folderUrl: "",
-          },
-          {
-            id: "numerical_methods_2",
-            title: "UNIT 2",
-            folderUrl: "",
-          },
-          {
-            id: "numerical_methods_3",
-            title: "UNIT 3",
-            folderUrl: "",
-          },
-          {
-            id: "numerical_methods_4",
-            title: "UNIT 4",
-            folderUrl: "",
           },
         ],
       },

@@ -23,11 +23,11 @@ export function SiteHeader() {
           <p className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground sm:text-xs">
             S. V. E Society&apos;s
           </p>
-          <h1 className="font-display text-[15px] font-semibold leading-snug text-foreground sm:text-lg md:text-xl">
-            Sri Channabasaveshwar Post Graduate Studies
+          <h1 className="font-display text-[13px] font-semibold leading-snug text-foreground sm:text-base md:text-lg">
+            Sri Channabasaveshwar Post Graduate Studies and Research Center, Bhalki
           </h1>
           <p className="mt-0.5 text-[10px] text-muted-foreground sm:text-xs">
-            Research Center, Bhalki &middot; Affiliated to Bidar University
+            (Affiliated to Bidar University)
           </p>
         </div>
 
