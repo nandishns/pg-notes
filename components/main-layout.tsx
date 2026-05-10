@@ -8,50 +8,53 @@ export function MainLayout({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex min-h-screen flex-col">
       <SiteHeader />
-      <div className="sticky top-20 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container py-2 text-center">
-          <h1 className="text-sm font-bold tracking-tight">DEPARTMENT OF MATHEMATICS</h1>
-        </div>
-      </div>
       <main className="flex-1">
-        <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10">
+        <div className="mx-auto w-full max-w-6xl px-4 pt-6 pb-12 sm:px-6 sm:pt-8 lg:px-8 lg:pt-10">
           {children}
-        </section>
+        </div>
       </main>
-      <footer className="bg-black text-white py-4">
-        <div className="container px-4">
-          <div className="max-w-4xl mx-auto text-center text-sm">
-            <h2 className="text-lg font-bold mb-2">Department of Mathematics</h2>
-            <div className="flex flex-wrap justify-center items-center gap-4 mb-2">
+      <footer className="mt-auto bg-foreground text-background/90">
+        <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="font-display text-base font-semibold tracking-tight text-background sm:text-lg">
+              Department of Mathematics
+            </h2>
+            <p className="mt-1 text-[11px] uppercase tracking-[0.22em] text-background/50">
+              Faculty &amp; Staff
+            </p>
+
+            <div className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-3 sm:gap-2">
               <div>
-                <p className="font-medium">Prof. Meenakumari Patil</p>
-                <p className="text-xs text-gray-300">Principal (MCom, MA, MPhil, MEd)</p>
+                <p className="text-sm font-medium text-background">Prof. Meenakumari Patil</p>
+                <p className="text-[11px] text-background/60">Principal &middot; MCom, MA, MPhil, MEd</p>
               </div>
-              <div className="h-8 w-px bg-gray-600 hidden sm:block"></div>
-              <div>
-                <p className="font-medium">Mr. Sharanappa G.Dongargaon</p>
-                <p className="text-xs text-gray-300">Head of Department (MSc, B.Ed)</p>
+              <div className="sm:border-x sm:border-background/15 sm:px-4">
+                <p className="text-sm font-medium text-background">Mr. Sharanappa G. Dongargaon</p>
+                <p className="text-[11px] text-background/60">Head of Department &middot; MSc, B.Ed</p>
               </div>
-              <div className="h-8 w-px bg-gray-600 hidden sm:block"></div>
               <div>
-                <p className="font-medium">Kum. Anjali M. Kale</p>
-                <p className="text-xs text-gray-300">Lecturer (MSc, B.Ed)</p>
+                <p className="text-sm font-medium text-background">Kum. Anjali M. Kale</p>
+                <p className="text-[11px] text-background/60">Lecturer &middot; MSc, B.Ed</p>
               </div>
             </div>
-           
-            <div className="flex items-center justify-center gap-2 mt-4 text-gray-400">
-              <Users className="h-4 w-4" />
-              <span className="text-xs">
-                {visitorCount === null 
-                  ? 'Loading...' 
-                  : `${(visitorCount || 0).toLocaleString()} views`}
-              </span>
+
+            <div className="mt-6 flex flex-col items-center justify-center gap-2 border-t border-background/10 pt-4 text-background/60 sm:flex-row sm:gap-4">
+              <div className="flex items-center gap-1.5">
+                <Users className="h-3.5 w-3.5" />
+                <span className="text-[11px] font-medium">
+                  {visitorCount === null
+                    ? "Loading…"
+                    : `${(visitorCount || 0).toLocaleString()} views`}
+                </span>
+              </div>
+              <span className="hidden h-3 w-px bg-background/20 sm:block" />
+              <p className="text-[11px]">
+                &copy; {new Date().getFullYear()} CBPG, Bhalki
+              </p>
             </div>
-            
-            <p className="text-xs text-gray-400 mt-2">&copy; {new Date().getFullYear()} Department of Mathematics, CBPG Bhalki</p>
           </div>
         </div>
       </footer>
     </div>
   )
-} 
+}

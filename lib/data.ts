@@ -1,26 +1,26 @@
 export interface Lesson {
-  id: string
-  title: string
-  description?: string
-  folderUrl: string
+  id: string;
+  title: string;
+  description?: string;
+  folderUrl: string;
 }
 
 export interface PYQPaper {
-  year: number
-  paperUrl?: string
+  year: number;
+  paperUrl?: string;
 }
 
 export interface Subject {
-  id: string
-  name: string
-  lessons: Lesson[]
-  pyqPapers?: PYQPaper[]
+  id: string;
+  name: string;
+  lessons: Lesson[];
+  pyqPapers?: PYQPaper[];
 }
 
 export interface Semester {
-  id: number
-  name: string
-  subjects: Subject[]
+  id: number;
+  name: string;
+  subjects: Subject[];
 }
 
 export const semesters: Semester[] = [
@@ -35,34 +35,39 @@ export const semesters: Semester[] = [
           {
             id: "algebra_1",
             title: "Unit 1",
-            folderUrl: "https://drive.google.com/file/d/1I_AyJeQ9kBhQDSeiw2rAMFX73L00AMlW/view?usp=sharing",
+            folderUrl:
+              "https://drive.google.com/file/d/1I_AyJeQ9kBhQDSeiw2rAMFX73L00AMlW/view?usp=sharing",
           },
           {
             id: "algebra_2",
             title: "Unit 2",
-            folderUrl: "https://drive.google.com/file/d/12TBVu5SrIi_cj-Wlafrqt-I_IstqRsha/view?usp=sharing",
+            folderUrl:
+              "https://drive.google.com/file/d/12TBVu5SrIi_cj-Wlafrqt-I_IstqRsha/view?usp=sharing",
           },
           {
             id: "algebra_3",
             title: "Unit 3",
-            folderUrl: "https://drive.google.com/file/d/1zoImLWMsQWCuUYkRR6DpVNOLxClWa1aM/view?usp=sharing",
+            folderUrl:
+              "https://drive.google.com/file/d/1zoImLWMsQWCuUYkRR6DpVNOLxClWa1aM/view?usp=sharing",
           },
           {
             id: "algebra_4",
             title: "Unit 4",
-            folderUrl: "https://drive.google.com/file/d/1q3LJnDGzJDej7MZsD-yFUWwGvJlHhWZe/view?usp=sharing",
+            folderUrl:
+              "https://drive.google.com/file/d/1q3LJnDGzJDej7MZsD-yFUWwGvJlHhWZe/view?usp=sharing",
           },
         ],
         pyqPapers: [
           {
             year: 2024,
-            paperUrl: "https://drive.google.com/file/d/1bylCyBu2pUOOmBGhSkIkKHZtkB2Bi0iW/view?usp=sharing",
+            paperUrl:
+              "https://drive.google.com/file/d/1bylCyBu2pUOOmBGhSkIkKHZtkB2Bi0iW/view?usp=sharing",
           },
           {
             year: 2023,
-            paperUrl : "https://drive.google.com/file/d/1qn1Dhnrl8iw_jTvZs7iPIRiDUMisS6dU/view?usp=sharing"
-          }
-          
+            paperUrl:
+              "https://drive.google.com/file/d/1qn1Dhnrl8iw_jTvZs7iPIRiDUMisS6dU/view?usp=sharing",
+          },
         ],
       },
       {
@@ -72,17 +77,20 @@ export const semesters: Semester[] = [
           {
             id: "real_analysis_1",
             title: "Unit 1",
-            folderUrl: "https://drive.google.com/file/d/1oQ4sNi1s9kro-2VYxxpYRefgkImIgjNZ/view?usp=sharing",
+            folderUrl:
+              "https://drive.google.com/file/d/1oQ4sNi1s9kro-2VYxxpYRefgkImIgjNZ/view?usp=sharing",
           },
           {
             id: "real_analysis_2",
             title: "Unit 2",
-            folderUrl: "https://drive.google.com/file/d/1wve1aZwrXlUiDHbm3pp_sZQndizdLVH5/view?usp=sharing",
+            folderUrl:
+              "https://drive.google.com/file/d/1wve1aZwrXlUiDHbm3pp_sZQndizdLVH5/view?usp=sharing",
           },
           {
             id: "real_analysis_3",
             title: "Unit 3",
-            folderUrl: "https://drive.google.com/file/d/1BGK1If93PyR-0jaZO5L75r7gSFSi_vHd/view?usp=sharing",
+            folderUrl:
+              "https://drive.google.com/file/d/1BGK1If93PyR-0jaZO5L75r7gSFSi_vHd/view?usp=sharing",
           },
           {
             id: "real_analysis_4",
@@ -93,11 +101,13 @@ export const semesters: Semester[] = [
         pyqPapers: [
           {
             year: 2024,
-            paperUrl: "https://drive.google.com/file/d/1vgvo-5WOIp4z80rCYF3oAa_J3bL3dOeL/view?usp=sharing",
+            paperUrl:
+              "https://drive.google.com/file/d/1vgvo-5WOIp4z80rCYF3oAa_J3bL3dOeL/view?usp=sharing",
           },
           {
             year: 2023,
-            paperUrl: "https://drive.google.com/file/d/1dvuKSKhUOJO8JaKS076XoHEBGjvAn9Xo/view?usp=sharing",
+            paperUrl:
+              "https://drive.google.com/file/d/1dvuKSKhUOJO8JaKS076XoHEBGjvAn9Xo/view?usp=sharing",
           },
         ],
       },
@@ -108,28 +118,33 @@ export const semesters: Semester[] = [
           {
             id: "general_topology_1",
             title: "Unit 1",
-            folderUrl: "https://drive.google.com/file/d/1od4gG7-ORi-CwETLVEamLJlJNnmUgyPG/view?usp=sharing",
+            folderUrl:
+              "https://drive.google.com/file/d/1od4gG7-ORi-CwETLVEamLJlJNnmUgyPG/view?usp=sharing",
           },
           {
             id: "general_topology_2_3",
             title: "Unit 2 & 3",
-            folderUrl: "https://drive.google.com/file/d/1d-c44zKbUo0lFOWyEAiC8z0Hglzi9uXq/view?usp=sharing",
+            folderUrl:
+              "https://drive.google.com/file/d/1d-c44zKbUo0lFOWyEAiC8z0Hglzi9uXq/view?usp=sharing",
           },
-        
+
           {
             id: "general_topology_4",
             title: "Unit 4",
-            folderUrl: "https://drive.google.com/file/d/15VaBS574JFnD23Vt0292-TQEbZ9pFc2q/view?usp=sharing",
+            folderUrl:
+              "https://drive.google.com/file/d/15VaBS574JFnD23Vt0292-TQEbZ9pFc2q/view?usp=sharing",
           },
         ],
         pyqPapers: [
           {
             year: 2024,
-            paperUrl: "https://drive.google.com/file/d/1wfLn8TCKiK5WgPysDw_hPMjPnx0d9CTK/view?usp=sharing",
+            paperUrl:
+              "https://drive.google.com/file/d/1wfLn8TCKiK5WgPysDw_hPMjPnx0d9CTK/view?usp=sharing",
           },
           {
             year: 2023,
-            paperUrl: "https://drive.google.com/file/d/1u6yjzNiHROdfUU5JXiZSIYkgX5n3-2ZX/view?usp=sharing",
+            paperUrl:
+              "https://drive.google.com/file/d/1u6yjzNiHROdfUU5JXiZSIYkgX5n3-2ZX/view?usp=sharing",
           },
         ],
       },
@@ -140,36 +155,41 @@ export const semesters: Semester[] = [
           {
             id: "ordinary_differential_equations_1",
             title: "Unit 1",
-            folderUrl: "https://drive.google.com/file/d/17JnUrdxp3QqMa-mEWspoeIC8z_42E6bd/view?usp=sharing",
+            folderUrl:
+              "https://drive.google.com/file/d/17JnUrdxp3QqMa-mEWspoeIC8z_42E6bd/view?usp=sharing",
           },
           {
             id: "ordinary_differential_equations_2",
             title: "Unit 2",
-            folderUrl: "https://drive.google.com/file/d/1emYbRKZKBFv0TVNTmw2vfAM0gE1lZDrr/view?usp=sharing",
+            folderUrl:
+              "https://drive.google.com/file/d/1emYbRKZKBFv0TVNTmw2vfAM0gE1lZDrr/view?usp=sharing",
           },
           {
             id: "ordinary_differential_equations_3",
             title: "Unit 3",
-            folderUrl: "https://drive.google.com/file/d/1BGK1If93PyR-0jaZO5L75r7gSFSi_vHd/view?usp=sharing",
+            folderUrl:
+              "https://drive.google.com/file/d/1p6R06hTxNsnvykbSfDRJH8GRS-Ae7PdM/view?usp=sharing",
           },
-          
+
           {
             id: "ordinary_differential_equations_4",
             title: "Unit 4",
-            folderUrl: "https://drive.google.com/file/d/1emYbRKZKBFv0TVNTmw2vfAM0gE1lZDrr/view?usp=sharing",
+            folderUrl:
+              "https://drive.google.com/file/d/12M0kUqxJT0NjpEd86x8q3aTPJizx4dj1/view?usp=sharing",
           },
-          
         ],
-        pyqPapers :[
+        pyqPapers: [
           {
             year: 2024,
-            paperUrl: "https://drive.google.com/file/d/1n3hQl1iDRBekLd6QZrL6h0B197RnDkkA/view?usp=sharing",
+            paperUrl:
+              "https://drive.google.com/file/d/1n3hQl1iDRBekLd6QZrL6h0B197RnDkkA/view?usp=sharing",
           },
           {
             year: 2023,
-            paperUrl: "https://drive.google.com/file/d/1Zhk5HRgoXFf_dyNUZfTMVO50E6vv4Gy9/view?usp=sharing",
+            paperUrl:
+              "https://drive.google.com/file/d/1Zhk5HRgoXFf_dyNUZfTMVO50E6vv4Gy9/view?usp=sharing",
           },
-        ]
+        ],
       },
       {
         id: "discrete_mathematics",
@@ -178,31 +198,34 @@ export const semesters: Semester[] = [
           {
             id: "discrete_mathematics_1",
             title: "Unit 1",
-            folderUrl: "https://drive.google.com/file/d/1s-ucxN3UtuKULAkM5mdF3tcca5EQaVso/view?usp=sharing",
+            folderUrl:
+              "https://drive.google.com/file/d/1s-ucxN3UtuKULAkM5mdF3tcca5EQaVso/view?usp=sharing",
           },
           {
             id: "discrete_mathematics_2",
             title: "Unit 2",
-            folderUrl: "https://drive.google.com/file/d/1kjxlUmhXVnQVqhNHqy9b8HZodkmLixaO/view?usp=sharing",
+            folderUrl:
+              "https://drive.google.com/file/d/1kjxlUmhXVnQVqhNHqy9b8HZodkmLixaO/view?usp=sharing",
           },
           {
             id: "discrete_mathematics_3",
             title: "Unit 3",
-            folderUrl: "https://drive.google.com/file/d/1NF85ENSjCMMiqSa075hHn8BZliiLWbt4/view?usp=sharing",
+            folderUrl:
+              "https://drive.google.com/file/d/1NF85ENSjCMMiqSa075hHn8BZliiLWbt4/view?usp=sharing",
           },
-          
-          
         ],
-        pyqPapers :[
+        pyqPapers: [
           {
             year: 2024,
-            paperUrl: "https://drive.google.com/file/d/1a_YSM06_wAcZKF5pr57Cbm-r3XwjtjiM/view?usp=sharing",
+            paperUrl:
+              "https://drive.google.com/file/d/1a_YSM06_wAcZKF5pr57Cbm-r3XwjtjiM/view?usp=sharing",
           },
           {
             year: 2023,
-            paperUrl: "https://drive.google.com/file/d/1M3Vmr0RBQr5iz5vpTplflaDWzVnb1xKU/view?usp=sharing",
+            paperUrl:
+              "https://drive.google.com/file/d/1M3Vmr0RBQr5iz5vpTplflaDWzVnb1xKU/view?usp=sharing",
           },
-        ]
+        ],
       },
       {
         id: "operations_research",
@@ -211,36 +234,40 @@ export const semesters: Semester[] = [
           {
             id: "operations_research_1",
             title: "Unit 1",
-            folderUrl: "https://drive.google.com/file/d/1WukFwFGWiSn0TqI61dMuBv3ntqqnOhuV/view?usp=sharing",
+            folderUrl:
+              "https://drive.google.com/file/d/1WukFwFGWiSn0TqI61dMuBv3ntqqnOhuV/view?usp=sharing",
           },
           {
             id: "operations_research_2",
             title: "Unit 2",
-            folderUrl: "https://drive.google.com/file/d/160j8oOwRYrGs88m8lmyT-Be2V5r9mO3R/view?usp=sharing",
+            folderUrl:
+              "https://drive.google.com/file/d/160j8oOwRYrGs88m8lmyT-Be2V5r9mO3R/view?usp=sharing",
           },
           {
             id: "operations_research_3",
             title: "Unit 3",
-            folderUrl: "https://drive.google.com/file/d/1vFCYC3Kiq8c7Way5vWOx4inFF-1Y73q1/view?usp=sharing",
+            folderUrl:
+              "https://drive.google.com/file/d/1vFCYC3Kiq8c7Way5vWOx4inFF-1Y73q1/view?usp=sharing",
           },
           {
             id: "operations_research_4",
             title: "Unit 4",
-            folderUrl: "https://drive.google.com/file/d/1BoFojLXLf7nxrtRqMk8-z2WQin25XycU/view?usp=sharing",
+            folderUrl:
+              "https://drive.google.com/file/d/1BoFojLXLf7nxrtRqMk8-z2WQin25XycU/view?usp=sharing",
           },
-
-
         ],
-        pyqPapers :[
+        pyqPapers: [
           {
             year: 2024,
-            paperUrl: "https://drive.google.com/file/d/1T43uE2Dxjj9_b1kmz7Yi2ltOta-4md4A/view?usp=sharing",
+            paperUrl:
+              "https://drive.google.com/file/d/1T43uE2Dxjj9_b1kmz7Yi2ltOta-4md4A/view?usp=sharing",
           },
           {
             year: 2023,
-            paperUrl: "https://drive.google.com/file/d/1fqLFzGgbnmhC0mdwOdU0FhnvTD43t4O1/view?usp=sharing",
+            paperUrl:
+              "https://drive.google.com/file/d/1fqLFzGgbnmhC0mdwOdU0FhnvTD43t4O1/view?usp=sharing",
           },
-        ]
+        ],
       },
       {
         id: "number_theory",
@@ -266,22 +293,26 @@ export const semesters: Semester[] = [
           {
             id: "complex_analysis_1",
             title: "UNIT 1",
-            folderUrl: "https://drive.google.com/file/d/1rkVKgo_PELOqRHfAPO5S6gnkxupePWdd/view?usp=sharing",
+            folderUrl:
+              "https://drive.google.com/file/d/1rkVKgo_PELOqRHfAPO5S6gnkxupePWdd/view?usp=sharing",
           },
           {
             id: "complex_analysis_2",
             title: "UNIT 2",
-            folderUrl: "https://drive.google.com/file/d/12t8OdII92j5byMtqO0l7J5Xig5oJA21p/view?usp=sharing",
+            folderUrl:
+              "https://drive.google.com/file/d/12t8OdII92j5byMtqO0l7J5Xig5oJA21p/view?usp=sharing",
           },
           {
             id: "complex_analysis_3",
             title: "UNIT 3",
-            folderUrl: "https://drive.google.com/file/d/1rkVKgo_PELOqRHfAPO5S6gnkxupePWdd/view?usp=sharing",
+            folderUrl:
+              "https://drive.google.com/file/d/1rkVKgo_PELOqRHfAPO5S6gnkxupePWdd/view?usp=sharing",
           },
           {
             id: "complex_analysis_4",
             title: "UNIT 4",
-            folderUrl: "https://drive.google.com/file/d/1NT5NCh345maeW6-QU2qrOO0Jff_Qho5w/view?usp=sharing",
+            folderUrl:
+              "https://drive.google.com/file/d/1NT5NCh345maeW6-QU2qrOO0Jff_Qho5w/view?usp=sharing",
           },
         ],
       },
@@ -292,22 +323,26 @@ export const semesters: Semester[] = [
           {
             id: "partial_differential_equation-1",
             title: "UNIT 1",
-            folderUrl: "https://drive.google.com/file/d/1rCKI6QqSMdaADd4zJN_NeZ9KDznFU23J/view?usp=drive_link",
+            folderUrl:
+              "https://drive.google.com/file/d/1rCKI6QqSMdaADd4zJN_NeZ9KDznFU23J/view?usp=drive_link",
           },
-           {
+          {
             id: "partial_differential_equation-2",
             title: "UNIT 2",
-            folderUrl: "https://drive.google.com/file/d/1KB_kxyld-EL4eqhy1nZeNlAOlLTwlzrS/view?usp=sharing",
+            folderUrl:
+              "https://drive.google.com/file/d/1KB_kxyld-EL4eqhy1nZeNlAOlLTwlzrS/view?usp=sharing",
           },
-           {
+          {
             id: "partial_differential_equation-3",
             title: "UNIT 3",
-            folderUrl: "https://drive.google.com/file/d/1tiMVodJgbk414GKKdS4c_fO-rx2Zh5lJ/view?usp=sharing",
+            folderUrl:
+              "https://drive.google.com/file/d/1tiMVodJgbk414GKKdS4c_fO-rx2Zh5lJ/view?usp=sharing",
           },
-           {
+          {
             id: "partial_differential_equation-4",
             title: "UNIT 4",
-            folderUrl: "https://drive.google.com/file/d/1rBAcOxbLIwePDPc-0kg4IPSeAOjOdLRb/view?usp=sharing",
+            folderUrl:
+              "https://drive.google.com/file/d/1rBAcOxbLIwePDPc-0kg4IPSeAOjOdLRb/view?usp=sharing",
           },
         ],
       },
@@ -318,22 +353,26 @@ export const semesters: Semester[] = [
           {
             id: "basics_of_c_1",
             title: "C PROGRAMMING - UNIT 1",
-            folderUrl: "https://drive.google.com/file/d/1v9FoQCRdrV91j7SYFveR0q1NNlI87iEA/view",
+            folderUrl:
+              "https://drive.google.com/file/d/1v9FoQCRdrV91j7SYFveR0q1NNlI87iEA/view",
           },
           {
             id: "basics_of_c_2",
             title: "C PROGRAMMING - UNIT 2",
-            folderUrl: "https://drive.google.com/file/d/1ZF-8shng6kEaDyNz2fZHFlKYqdVlxECS/view",
+            folderUrl:
+              "https://drive.google.com/file/d/1ZF-8shng6kEaDyNz2fZHFlKYqdVlxECS/view",
           },
-           {
+          {
             id: "basics_of_c_3",
             title: "MATLAB - UNIT 3",
-            folderUrl: "https://drive.google.com/file/d/1Ww-MkcD477RMkn0v2utRbn8gl0FnAtB3/view?usp=drive_link",
+            folderUrl:
+              "https://drive.google.com/file/d/1Ww-MkcD477RMkn0v2utRbn8gl0FnAtB3/view?usp=drive_link",
           },
-           {
+          {
             id: "basics_of_c_4",
             title: "MATLAB - UNIT 4",
-            folderUrl: "https://drive.google.com/file/d/1aHkrt1yoRwjl4mmTEm5ECOUL84qkPuLd/view?usp=drive_link",
+            folderUrl:
+              "https://drive.google.com/file/d/1aHkrt1yoRwjl4mmTEm5ECOUL84qkPuLd/view?usp=drive_link",
           },
         ],
       },
@@ -344,52 +383,249 @@ export const semesters: Semester[] = [
           {
             id: "sets_chap_1",
             title: "UNIT 1",
-            folderUrl: "https://drive.google.com/file/d/1Y2tNRsA4N5R-bS_4tPcmzNMAg3oafyje/view?usp=sharing",
+            folderUrl:
+              "https://drive.google.com/file/d/1Y2tNRsA4N5R-bS_4tPcmzNMAg3oafyje/view?usp=sharing",
           },
           {
             id: "sets_chap_2",
             title: "UNIT 2",
-            folderUrl: "https://drive.google.com/file/d/1q8cdbLnLCZvdQY4ak1BMIuc1hzHJF8mw/view?usp=sharing",
+            folderUrl:
+              "https://drive.google.com/file/d/1q8cdbLnLCZvdQY4ak1BMIuc1hzHJF8mw/view?usp=sharing",
           },
           {
             id: "sets_chap_3",
             title: "UNIT 3",
-            folderUrl: "https://drive.google.com/file/d/1JD5CbqLDRP3VHtmF2pH6A9J4HhTURIss/view?usp=sharing",
+            folderUrl:
+              "https://drive.google.com/file/d/1JD5CbqLDRP3VHtmF2pH6A9J4HhTURIss/view?usp=sharing",
           },
           {
             id: "sets_chap_4",
             title: "UNIT 4",
-            folderUrl: "https://drive.google.com/file/d/1Y5Rj_UVcPJXUN-6TQBwt5-h88dhZjG1W/view?usp=sharing",
+            folderUrl:
+              "https://drive.google.com/file/d/1Y5Rj_UVcPJXUN-6TQBwt5-h88dhZjG1W/view?usp=sharing",
           },
         ],
       },
-     {
+      {
         id: "fundamentals_of_computer",
         name: "Fundamentals of Computer",
         lessons: [
           {
             id: "fundaments_1",
             title: "UNIT-1",
-            folderUrl: "https://drive.google.com/file/d/1uducF2NEw7owr18KcmgE3GKFfXdprtka/view?usp=drive_link",
+            folderUrl:
+              "https://drive.google.com/file/d/1uducF2NEw7owr18KcmgE3GKFfXdprtka/view?usp=drive_link",
           },
           {
             id: "fundaments_2",
             title: "UNIT 2",
-            folderUrl: "https://drive.google.com/file/d/1mdA1BUTla1Ki2yNeWoHgBcrZu0EBHiMg/view?usp=drive_link",
+            folderUrl:
+              "https://drive.google.com/file/d/1mdA1BUTla1Ki2yNeWoHgBcrZu0EBHiMg/view?usp=drive_link",
           },
-           {
+          {
             id: "fundaments_3",
             title: "UNIT 3",
-            folderUrl: "https://drive.google.com/file/d/1p705978Vtm-pwwd37yBiO_TYSVJ53zz_/view?usp=drive_link",
+            folderUrl:
+              "https://drive.google.com/file/d/1p705978Vtm-pwwd37yBiO_TYSVJ53zz_/view?usp=drive_link",
           },
-           {
+          {
             id: "fundaments_4",
             title: "UNIT 4",
-            folderUrl: "https://drive.google.com/file/d/1LWMdAV_8fHOAUgpxH_PLUmh0yt1_77y4/view?usp=drive_link",
+            folderUrl:
+              "https://drive.google.com/file/d/1LWMdAV_8fHOAUgpxH_PLUmh0yt1_77y4/view?usp=drive_link",
           },
         ],
       },
     ],
   },
-]
-
+  {
+    id: 3,
+    name: "Semester 3",
+    subjects: [
+      {
+        id: "fluid_mechanics",
+        name: "Fluid Mechanics",
+        lessons: [
+          {
+            id: "fluid_mechanics_1",
+            title: "UNIT 1",
+            folderUrl:
+              "https://drive.google.com/file/d/1ZSN-STHNuu8TUmr9IMn-_yu6BQJm4YBQ/view?usp=sharing",
+          },
+          {
+            id: "fluid_mechanics_2",
+            title: "UNIT 2",
+            folderUrl:
+              "https://drive.google.com/file/d/1TUZ1GLg5apybbxe-_0V0iLA_oVZHpGWU/view?usp=sharing",
+          },
+          {
+            id: "fluid_mechanics_3",
+            title: "UNIT 3",
+            folderUrl:
+              "https://drive.google.com/file/d/1dqXZoJUGCvb3a3XgUbPFPMi6juBp-iwW/view?usp=sharing",
+          },
+          {
+            id: "fluid_mechanics_4",
+            title: "UNIT 4",
+            folderUrl:
+              "https://drive.google.com/file/d/1h24OD_nKbbGTyzZS9ciXLa8bcVccM1h-/view?usp=sharing",
+          },
+        ],
+      },
+      {
+        id: "graph_theory",
+        name: "Graph Theory",
+        lessons: [
+          {
+            id: "graph_theory_1",
+            title: "UNIT 1",
+            folderUrl:
+              "https://drive.google.com/file/d/1aqbjizvzx10gcbjPQ4g1bMXWv37Q9AMx/view?usp=sharing",
+          },
+          {
+            id: "graph_theory_2",
+            title: "UNIT 2",
+            folderUrl:
+              "https://drive.google.com/file/d/1CqGDfBtGM8DNhVHL9l9VjF8CK1suAB_u/view?usp=sharing",
+          },
+          {
+            id: "graph_theory_3",
+            title: "UNIT 3",
+            folderUrl:
+              "https://drive.google.com/file/d/1Zwb5bhTCDEYjPQx6eRx2sFlKoUdguwK4/view?usp=sharing",
+          },
+          {
+            id: "graph_theory_4",
+            title: "UNIT 4",
+            folderUrl:
+              "https://drive.google.com/file/d/18rs6Gu5TOtl2Kf62grBLPNJG-7qLB5I0/view?usp=sharing",
+          },
+        ],
+      },
+      {
+        id: "functional_analysis",
+        name: "Functional Analysis",
+        lessons: [
+          {
+            id: "functional_analysis_1",
+            title: "UNIT 1",
+            folderUrl:
+              "https://drive.google.com/file/d/1egjy3m-F6kHQyOiKWLZLv2Ymx8CTzQf4/view?usp=sharing",
+          },
+          {
+            id: "functional_analysis_2",
+            title: "UNIT 2",
+            folderUrl:
+              "https://drive.google.com/file/d/1AAgdNnujt1QBY1Wys4mUVPgHHL4kcELQ/view?usp=sharing",
+          },
+          {
+            id: "functional_analysis_3_part_1",
+            title: "UNIT 3 - Part 1",
+            folderUrl:
+              "https://drive.google.com/file/d/1vUXbJU0gnOJiMZfhI0Tlo3HDV-2L0hTE/view?usp=sharing",
+          },
+          {
+            id: "functional_analysis_3_part_2",
+            title: "UNIT 3 - Part 2",
+            folderUrl:
+              "https://drive.google.com/file/d/1T6vQlA8DIrjy7yVQi644vp4vOMWrfQ8J/view?usp=sharing",
+          },
+          {
+            id: "functional_analysis_4",
+            title: "UNIT 4",
+            folderUrl:
+              "https://drive.google.com/file/d/1O_WdwtTMYCtNTZjYtCn7Wb84isOwmSiI/view?usp=sharing",
+          },
+        ],
+      },
+      {
+        id: "numerical_analysis",
+        name: "Numerical Analysis",
+        lessons: [
+          {
+            id: "numerical_analysis_1",
+            title: "UNIT 1",
+            folderUrl:
+              "https://drive.google.com/file/d/1McKkxAhW85n1dl04f_ClWNv60N6jZ8KW/view?usp=sharing",
+          },
+          {
+            id: "numerical_analysis_2",
+            title: "UNIT 2",
+            folderUrl:
+              "https://drive.google.com/file/d/13jiDwQfXYFpjSkWggcXwbA6oMTTiGg7v/view?usp=sharing",
+          },
+          {
+            id: "numerical_analysis_3",
+            title: "UNIT 3",
+            folderUrl:
+              "https://drive.google.com/file/d/1VbB7q4GmCh0CHaza1CDOu0RSeJAK3Trn/view?usp=sharing",
+          },
+          {
+            id: "numerical_analysis_4",
+            title: "UNIT 4",
+            folderUrl:
+              "https://drive.google.com/file/d/1gex1OdFLm9GDHuiDcdAQgDVAEDCg4Hxo/view?usp=sharing",
+          },
+        ],
+      },
+      {
+        id: "numerical_methods",
+        name: "Numerical Methods",
+        lessons: [
+          {
+            id: "numerical_methods_manual_hcp_3_3",
+            title: "Manual for HCP-3.3",
+            folderUrl:
+              "https://drive.google.com/file/d/11adpYzeAQhSmUAXbiLakw3ZO_-TC46fU/view?usp=sharing",
+          },
+          {
+            id: "numerical_methods_1",
+            title: "UNIT 1",
+            folderUrl: "",
+          },
+          {
+            id: "numerical_methods_2",
+            title: "UNIT 2",
+            folderUrl: "",
+          },
+          {
+            id: "numerical_methods_3",
+            title: "UNIT 3",
+            folderUrl: "",
+          },
+          {
+            id: "numerical_methods_4",
+            title: "UNIT 4",
+            folderUrl: "",
+          },
+        ],
+      },
+      {
+        id: "information_security_and_cyber_law",
+        name: "Information Security & Cyber Law",
+        lessons: [
+          {
+            id: "information_security_and_cyber_law_1",
+            title: "UNIT 1",
+            folderUrl: "",
+          },
+          {
+            id: "information_security_and_cyber_law_2",
+            title: "UNIT 2",
+            folderUrl: "",
+          },
+          {
+            id: "information_security_and_cyber_law_3",
+            title: "UNIT 3",
+            folderUrl: "",
+          },
+          {
+            id: "information_security_and_cyber_law_4",
+            title: "UNIT 4",
+            folderUrl: "",
+          },
+        ],
+      },
+    ],
+  },
+];

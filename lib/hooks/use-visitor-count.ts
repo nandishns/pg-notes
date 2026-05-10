@@ -1,41 +1,32 @@
-import { useState, useEffect } from 'react'
-
-interface CounterResponse {
-  id: number
-  name: string
-  count: number
-  created_at: string
-  updated_at: string
-  namespace_id: number
-  namespace: {
-    id: number
-    name: string
-    created_at: string
-    updated_at: string
-  }
-}
+import { useState, useEffect } from "react"
 
 export function useVisitorCount() {
   const [count, setCount] = useState<number | null>(null)
 
   useEffect(() => {
+    let cancelled = false
     const fetchCount = async () => {
       try {
-        const response = await fetch('https://api.counterapi.dev/v1/cbpg-math/visit/up')
-        const data: CounterResponse = await response.json()
-        if (data && typeof data.count === 'number') {
+        const response = await fetch("/api/visit", { cache: "no-store" })
+        const data = await response.json()
+        if (cancelled) return
+        if (data && typeof data.count === "number") {
           setCount(data.count)
         } else {
-          setCount(0) // Fallback to 0 if we get invalid data
+          setCount(0)
         }
       } catch (error) {
-        console.error('Error fetching visitor count:', error)
-        setCount(0) // Fallback to 0 on error
+        if (cancelled) return
+        console.error("Error fetching visitor count:", error)
+        setCount(0)
       }
     }
 
     fetchCount()
+    return () => {
+      cancelled = true
+    }
   }, [])
 
   return count
-} 
+}
