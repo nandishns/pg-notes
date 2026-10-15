@@ -27,8 +27,8 @@ export function MainLayout({ children }: { children: React.ReactNode }) {
 
             <div className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-3 sm:gap-2">
               <div>
-                <p className="text-sm font-medium text-background">Prof. Meenakumari Patil</p>
-                <p className="text-[11px] text-background/60">Principal &middot; MCom, MA, MPhil, MEd</p>
+                <p className="text-sm font-medium text-background">Mr. Vithalrao Patil</p>
+                <p className="text-[11px] text-background/60">Principal &middot; MA, NET, KSET</p>
               </div>
               <div className="sm:border-x sm:border-background/15 sm:px-4">
                 <p className="text-sm font-medium text-background">Mr. Sharanappa G. Dongargaon</p>
