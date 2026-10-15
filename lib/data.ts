@@ -315,6 +315,13 @@ export const semesters: Semester[] = [
               "https://drive.google.com/file/d/1NT5NCh345maeW6-QU2qrOO0Jff_Qho5w/view?usp=sharing",
           },
         ],
+        pyqPapers: [
+          {
+            year: 2024,
+            paperUrl:
+              "https://drive.google.com/file/d/1QCyeke7B1qY6DZfieqAirn5lFK7ujZm0/view?usp=sharing",
+          },
+        ],
       },
       {
         id: "partial_differential_equations",
@@ -343,6 +350,13 @@ export const semesters: Semester[] = [
             title: "UNIT 4",
             folderUrl:
               "https://drive.google.com/file/d/1rBAcOxbLIwePDPc-0kg4IPSeAOjOdLRb/view?usp=sharing",
+          },
+        ],
+        pyqPapers: [
+          {
+            year: 2024,
+            paperUrl:
+              "https://drive.google.com/file/d/1rEel7wkfy-oGecee_SCPA8Q5ZzDLpa02/view?usp=sharing",
           },
         ],
       },
@@ -375,6 +389,13 @@ export const semesters: Semester[] = [
               "https://drive.google.com/file/d/1aHkrt1yoRwjl4mmTEm5ECOUL84qkPuLd/view?usp=drive_link",
           },
         ],
+        pyqPapers: [
+          {
+            year: 2024,
+            paperUrl:
+              "https://drive.google.com/file/d/1ffqTQ6pDrGHRe4ZaodFLbB0hybSZfveF/view?usp=sharing",
+          },
+        ],
       },
       {
         id: "fuzzy_sets_and_systems",
@@ -405,6 +426,13 @@ export const semesters: Semester[] = [
               "https://drive.google.com/file/d/1Y5Rj_UVcPJXUN-6TQBwt5-h88dhZjG1W/view?usp=sharing",
           },
         ],
+        pyqPapers: [
+          {
+            year: 2024,
+            paperUrl:
+              "https://drive.google.com/file/d/1MUfYu2oLvQEGVKOjqHnjNTlxdMwzL-Bi/view?usp=sharing",
+          },
+        ],
       },
       {
         id: "fundamentals_of_computer",
@@ -433,6 +461,13 @@ export const semesters: Semester[] = [
             title: "UNIT 4",
             folderUrl:
               "https://drive.google.com/file/d/1LWMdAV_8fHOAUgpxH_PLUmh0yt1_77y4/view?usp=drive_link",
+          },
+        ],
+        pyqPapers: [
+          {
+            year: 2024,
+            paperUrl:
+              "https://drive.google.com/file/d/16QV5xzRUHqWdlsqHU1oPBarKoTKAGmCw/view?usp=sharing",
           },
         ],
       },
