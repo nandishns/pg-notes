@@ -608,4 +608,164 @@ export const semesters: Semester[] = [
       },
     ],
   },
+  {
+    id: 4,
+    name: "Semester 4",
+    subjects: [
+      {
+        id: "mathematical_methods",
+        name: "Mathematical Methods",
+        lessons: [
+          {
+            id: "mathematical_methods_1",
+            title: "UNIT 1",
+            folderUrl:
+              "https://drive.google.com/file/d/1orMsLHOlgMIAlEDhAxW9y6RGJpOpKn_o/view?usp=sharing",
+          },
+          {
+            id: "mathematical_methods_2",
+            title: "UNIT 2",
+            folderUrl:
+              "https://drive.google.com/file/d/19a5c34Jpn8bcxmKleI_aalcBdpbfDgxW/view?usp=sharing",
+          },
+        ],
+      },
+      {
+        id: "advanced_graph_theory",
+        name: "Advanced Graph Theory",
+        lessons: [
+          {
+            id: "advanced_graph_theory_1",
+            title: "UNIT 1",
+            folderUrl:
+              "https://drive.google.com/file/d/1XVajgYJu2xjkJV0FVUmVf0jefq_0MTJ_/view?usp=sharing",
+          },
+          {
+            id: "advanced_graph_theory_2",
+            title: "UNIT 2",
+            folderUrl:
+              "https://drive.google.com/file/d/1bI3JEqcRvC8l__fsEK4bKZBVbxlsfrtB/view?usp=sharing",
+          },
+          {
+            id: "advanced_graph_theory_3",
+            title: "UNIT 3",
+            folderUrl:
+              "https://drive.google.com/file/d/1NxMGooFgFYa5fZ1jN1kLR95UNQxMhBKA/view?usp=sharing",
+          },
+        ],
+        pyqPapers: [
+          {
+            year: 2025,
+            paperUrl:
+              "https://drive.google.com/file/d/1vIFhC32DF1gU7OY1Ts6j0unIv9TBo9KX/view?usp=sharing",
+          },
+        ],
+      },
+      {
+        id: "advanced_numerical_methods",
+        name: "Advanced Numerical Methods",
+        lessons: [
+          {
+            id: "advanced_numerical_methods_1",
+            title: "UNIT 1",
+            folderUrl:
+              "https://drive.google.com/file/d/19L-Sdg2IFQUum9CTAToUEBU7JqwUf3Ux/view?usp=sharing",
+          },
+          {
+            id: "advanced_numerical_methods_2",
+            title: "UNIT 2",
+            folderUrl:
+              "https://drive.google.com/file/d/1L2XCsySeTXEa3jDvXYRavLf9KYszhd82/view?usp=sharing",
+          },
+          {
+            id: "advanced_numerical_methods_3",
+            title: "UNIT 3",
+            folderUrl:
+              "https://drive.google.com/file/d/1QrajggR5R6Uj_8J0okqv85gpLdf9RhaE/view?usp=sharing",
+          },
+        ],
+        pyqPapers: [
+          {
+            year: 2025,
+            paperUrl:
+              "https://drive.google.com/file/d/1U0weBZCeiFbIWSY3PhgIW5ur1aNKxt6J/view?usp=sharing",
+          },
+        ],
+      },
+      {
+        id: "differential_geometry",
+        name: "Differential Geometry",
+        lessons: [
+          {
+            id: "differential_geometry_1",
+            title: "UNIT 1",
+            folderUrl:
+              "https://drive.google.com/file/d/1zBtlP1dUgDo8cwvpWwDHXCBVNUH3fRA2/view?usp=sharing",
+          },
+          {
+            id: "differential_geometry_2",
+            title: "UNIT 2",
+            folderUrl:
+              "https://drive.google.com/file/d/1twTxqv7YacpTiKO1bWu7YCn9CJqrOCTY/view?usp=sharing",
+          },
+          {
+            id: "differential_geometry_3",
+            title: "UNIT 3",
+            folderUrl:
+              "https://drive.google.com/file/d/1W7wiH1xFkaDTwiY9uPsMm_a4HMPg0Kgr/view?usp=sharing",
+          },
+          {
+            id: "differential_geometry_4",
+            title: "UNIT 4",
+            folderUrl:
+              "https://drive.google.com/file/d/1uzVJ5xCyyUpyjxZ8NPAdQeox4_Gg-iO3/view?usp=sharing",
+          },
+        ],
+        pyqPapers: [
+          {
+            year: 2025,
+            paperUrl:
+              "https://drive.google.com/file/d/1GUCItrvLPI6JQHByEtMbkXe9ALEfi9wl/view?usp=sharing",
+          },
+        ],
+      },
+      {
+        id: "advanced_fluid_mechanics",
+        name: "Advanced Fluid Mechanics",
+        lessons: [
+          {
+            id: "advanced_fluid_mechanics_1",
+            title: "UNIT 1",
+            folderUrl:
+              "https://drive.google.com/file/d/1s54Fk0vcZllOYsL8CO0ORGRkox9GH32I/view?usp=sharing",
+          },
+          {
+            id: "advanced_fluid_mechanics_2",
+            title: "UNIT 2",
+            folderUrl:
+              "https://drive.google.com/file/d/1yrqyhmMv_SAOA_2Ut2upgFcKEnmlmXTk/view?usp=sharing",
+          },
+          {
+            id: "advanced_fluid_mechanics_3",
+            title: "UNIT 3",
+            folderUrl:
+              "https://drive.google.com/file/d/1A0mI1dN71iVvzttXINii4R-LF4UHqxCm/view?usp=sharing",
+          },
+          {
+            id: "advanced_fluid_mechanics_4",
+            title: "UNIT 4",
+            folderUrl:
+              "https://drive.google.com/file/d/1F9XY3EKusjFp2nzXxtogPVsVBy8dfVjl/view?usp=sharing",
+          },
+        ],
+        pyqPapers: [
+          {
+            year: 2025,
+            paperUrl:
+              "https://drive.google.com/file/d/1EpzZ2bpvDe-LaH2TLUg2I5TyUQwVuFxC/view?usp=sharing",
+          },
+        ],
+      },
+    ],
+  },
 ];
