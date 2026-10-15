@@ -1,4 +1,5 @@
 import { SiteHeader } from "@/components/site-header"
+import { ActivitiesCarousel } from "@/components/activities-carousel"
 import { useVisitorCount } from "@/lib/hooks/use-visitor-count"
 import { Users } from "lucide-react"
 
@@ -13,6 +14,7 @@ export function MainLayout({ children }: { children: React.ReactNode }) {
           {children}
         </div>
       </main>
+      <ActivitiesCarousel />
       <footer className="mt-auto bg-foreground text-background/90">
         <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6 lg:px-8">
           <div className="text-center">
