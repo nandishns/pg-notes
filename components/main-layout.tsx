@@ -41,15 +41,19 @@ export function MainLayout({ children }: { children: React.ReactNode }) {
             </div>
 
             <div className="mt-6 flex flex-col items-center justify-center gap-2 border-t border-background/10 pt-4 text-background/60 sm:flex-row sm:gap-4">
-              <div className="flex items-center gap-1.5">
-                <Users className="h-3.5 w-3.5" />
-                <span className="text-[11px] font-medium">
-                  {visitorCount === null
-                    ? "Loading…"
-                    : `${(visitorCount || 0).toLocaleString()} views`}
-                </span>
-              </div>
-              <span className="hidden h-3 w-px bg-background/20 sm:block" />
+              {visitorCount !== undefined && (
+                <>
+                  <div className="flex items-center gap-1.5">
+                    <Users className="h-3.5 w-3.5" />
+                    <span className="text-[11px] font-medium">
+                      {visitorCount === null
+                        ? "Loading…"
+                        : `${visitorCount.toLocaleString()} views`}
+                    </span>
+                  </div>
+                  <span className="hidden h-3 w-px bg-background/20 sm:block" />
+                </>
+              )}
               <p className="text-[11px]">
                 &copy; {new Date().getFullYear()} CBPG, Bhalki
               </p>

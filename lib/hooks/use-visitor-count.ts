@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 
 export function useVisitorCount() {
-  const [count, setCount] = useState<number | null>(null)
+  const [count, setCount] = useState<number | null | undefined>(null)
 
   useEffect(() => {
     let cancelled = false
@@ -13,12 +13,12 @@ export function useVisitorCount() {
         if (data && typeof data.count === "number") {
           setCount(data.count)
         } else {
-          setCount(0)
+          setCount(undefined)
         }
       } catch (error) {
         if (cancelled) return
         console.error("Error fetching visitor count:", error)
-        setCount(0)
+        setCount(undefined)
       }
     }
 

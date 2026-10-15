@@ -2,7 +2,7 @@ import { NextResponse } from "next/server"
 
 export const dynamic = "force-dynamic"
 
-const COUNTER_URL = "https://api.counterapi.dev/v1/cbpg-math/visit/up"
+const COUNTER_URL = "https://abacus.jasoncameron.dev/hit/cbpg-math-pgnotes/views"
 
 export async function GET() {
   try {
@@ -11,7 +11,7 @@ export async function GET() {
       return NextResponse.json({ count: null }, { status: 200 })
     }
     const data = await response.json()
-    const count = typeof data?.count === "number" ? data.count : null
+    const count = typeof data?.value === "number" ? data.value : null
     return NextResponse.json(
       { count },
       {
